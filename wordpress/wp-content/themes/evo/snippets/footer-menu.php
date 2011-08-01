@@ -2,6 +2,6 @@
 	'container'		 => 'false',
 	'theme_location' => 'footer_menu',
 	'menu_id' => '',
-	'menu_class' => ''
+	'menu_class' => 'links'
 	)
 ); ?>
