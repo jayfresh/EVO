@@ -11,7 +11,7 @@ if($page_target->post_parent) {
 	}
 }
 
-$query = new WP_query("post_type=page&post_parent=".$page_target->ID);
+$query = new WP_query("post_type=page&post_parent=".$page_target->ID."&orderby=menu_order&order=asc");
 if($query->have_posts()) : ?>
 	<ul>
 		<li><a href="<?php echo get_permalink($page_target->ID); ?>"><?php echo get_the_title($page_target->ID); ?></a></li>

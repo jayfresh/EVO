@@ -19,4 +19,20 @@ if ( function_exists( 'register_nav_menu' ) ) {
 }
 
 
+// Utility functions
+function get_post_by_slug( $slug, $post_type='post' ) {
+    global $post;
+    $query = new WP_Query(
+        array(
+            'name' => $slug,
+            'post_type' => $post_type
+        )
+    );
+    while ( $query->have_posts() ) : $query->the_post();
+		$the_post = $post;
+	endwhile;
+	wp_reset_query();
+	return $the_post;
+}
+
 ?>
