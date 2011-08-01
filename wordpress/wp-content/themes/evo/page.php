@@ -1,0 +1,3 @@
+<?php
+/* for content pages */
+?>
