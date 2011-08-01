@@ -1,0 +1,540 @@
+/*
+Theme Name: EVO
+Description: Bespoke Theme for EVO
+Author: J&J
+Version: 1.0
+Author URI: http://www.withjandj.com
+Template: Scaffolding
+*/
+
+/* 
+Base colours:
+
+Beige:		#eeeee7;
+Red:		#fe001a;
+Grey:		#d7d9dd;
+Text grey:	#636466;
+
+*/
+
+body {
+	font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #636466;
+	background: white;
+	background-repeat: no-repeat;
+	font-size: 13px;
+	background-color: #d7d9dd;
+	top: -24px;
+}
+
+#wrap {
+	padding-top: 24px;	
+    -moz-box-shadow: 0px 0px 4px #333; 
+  	-webkit-box-shadow: 0px 0px 4px #333; 
+	box-shadow: 0px 0px 4px #333; 
+
+}
+
+
+.bartop {
+	border-top: 3px solid #ccc;
+	padding-top: 3px;
+}
+
+.bartop.padtopsmall { /* For adding a bar, with padding, to the top of a div - .bartop may not be necessary, as hr does this better */
+	padding-top: 15px;
+}
+
+hr {
+	border: none;
+	height: 6px; 
+
+	background-color: transparent;
+	color: transparent;
+	background-image: url(images/dots.png);
+	background-repeat: repeat-x; 
+	margin: -1px 0 7px 0;
+}
+
+.footer hr {
+	margin: -1px 0 11px 0;
+	height: 1px;
+	color: white;
+	background: white;
+	border: none;
+}
+
+.jbasewrap {
+	width: 951px; 
+	background-color: rgba(238, 238, 231, 1);
+}
+
+
+/*
+------------------------------------------------------------------------------ jBase Overrides
+*/
+
+
+.border {
+	background-image: url(images/dots.png), url(images/dots.png);
+	background-repeat: repeat-x;
+	background-position: top left, bottom left;
+}
+
+p {
+	margin-bottom: 18px;
+}
+
+
+
+
+
+
+/*
+------------------------------------------------------------------------------ Generic Typography
+*/
+
+h1, h2, h3, h4, h5, h6, .large {
+	font-family: 'Calvert MT Std';
+	font-weight: ;
+	letter-spacing: 0.03em;
+}
+
+
+
+h1.fixed, h2.fixed, h3.fixed, h4.fixed, h5.fixed, h6.fixed {
+	font-size: 11px;
+	line-height: 18px;		
+	margin-bottom: 6px; 
+	padding-top: 0px
+}
+.fixed {
+	margin-bottom: 6px;
+	font-family: 'Calvert MT Std';
+	font-weight: bold;
+	font-size: 11px;
+	color: #636466;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 18px;
+}
+
+.fixed a:link, .fixed a:visited, a.fixed:link, a.fixed:visited {
+	color: #fe001a;
+	text-decoration: none;
+	background-image: url(images/link-arrow.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 10px;
+}
+
+a.prev:link, a.prev:visited {
+	color: #fe001a;
+	text-decoration: none;
+	background-image: url(images/prev-arrow.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 10px;
+}
+
+.fixed a:hover, a.fixed:hover {
+	color: #65a9d9;
+}
+
+.fixed a[rel="external"] {
+	background-image: url(images/external-arrow.gif);
+}
+
+a.fixed[rel="rss"] {
+	background-image: url(images/rss.png);
+	padding-right: 18px;
+}
+
+p.small, span.small, ul.small, ol.small, blockquote.small {
+	font-size: 11px;
+	letter-spacing: 0.01em;
+	word-spacing: 0.1em;
+}
+
+ul.tags {
+	margin: 0px;
+	margin-bottom: 12px;
+	overflow: hidden;
+}
+
+.tags li {
+	list-style: none;
+}
+
+.tags a:link, .tags a:visited {
+	background-color: #eaeaea;
+	color: #5a5a5a;
+	font-family: 'nevisBold', 'Gotham HTF', 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	padding: 0px 5px;
+	margin: 0px 5px 6px 0px;;
+	float: left;
+	text-decoration: none;
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.tags a:hover {
+	color: #eaeaea;
+	background-color: #5a5a5a;
+}
+.tags a:active {
+	color: white;
+}
+
+a:link, a:visited {
+	color: #fe001a;
+}
+
+a:hover {
+	color: #fe001a;
+	text-decoration: none;
+}
+
+a.readMore {
+	color: #636466;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	background-image: url(images/readMore.png);
+	background-repeat: no-repeat;
+	background-position: left 3px;
+	letter-spacing: 0.06em;
+	padding-left: 15px;
+	display: block;
+}
+
+a.readMore:hover {
+	color: #fe001a;
+}
+
+h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, h3 a:link, h3 a:visited, h4 a:link, h4 a:visited, h5 a:link, h5 a:visited, h6 a:link, h6 a:visited, li a:link, li a:visited, .meta a:link, .meta a:visited, .large a:link, .large a:visited {
+	color: #fe001a;
+	text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, li a:hover, .meta a:hover, .large a:hover {
+	color: #fe001a;
+}
+
+.footer a:link, .footer a:visited {
+	text-decoration: none;
+	color: #636466;
+} 
+
+.footer a:hover, .footer a:active {
+	text-decoration: underline;
+} 
+
+.footer ul {
+	color: white;
+}
+
+.footer ul.links {
+	margin: 0px; 
+	text-decoration: none;
+	font-size: 11px;
+	letter-spacing: 0.06em;
+	overflow: hidden;
+}
+
+.footer ul.links li {
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+}
+
+.meta {
+	color: #0d4b8f;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 11px;
+	margin-bottom: 0;
+}
+
+
+blockquote {
+	background-image: url(images/quote.gif);
+	background-repeat: no-repeat;
+	background-position: 12px 3px;
+	padding-left: 40px;
+	letter-spacing: 0.02em;
+}
+
+.caption {
+	color: white;
+	font-style: italic;
+	letter-spacing: 0.02em;
+}
+
+.borderleft {
+	border-left: 1px solid #eaeaea;
+	
+}
+
+ul.noBullets {
+	margin-left: 0;
+}
+
+ul.noBullets li {
+	list-style: none;
+}
+
+/*
+------------------------------------------------------------------------------ Boxes
+*/
+
+.box {
+	background-color: white;
+}
+
+.box.grey {
+	background-color: #d7d9dd;
+}
+
+.box.darkgrey {
+	background-color: #a5a7a9;
+}
+
+/*
+------------------------------------------------------------------------------ Header
+*/
+
+#header {
+	height: 174px;
+	/*border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc; 
+	margin-top: -1px;
+	*/
+	margin-bottom: 0px;
+
+}
+
+#header a.logo {
+	display: block;
+	width: 171px;
+	height: 162px;
+}
+
+ul.nav {
+	margin-bottom:0px;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	position: relative;
+	border-left: 1px solid #636466;
+	margin-left: 0px;
+	padding-left: 10px;
+	margin-right: -1px;
+	height: 108px;
+}
+
+ul.nav li {
+	list-style: none;
+	position: relative;
+	margin-bottom: 12px;
+}
+
+ul.nav ul {
+	display: none;
+	margin-top: 12px;
+}
+
+.nav a {
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+}
+
+.nav a:link, .nav a:visited {
+	color: #636466;
+	text-decoration: none;
+	display: block;
+}
+
+.nav a:hover, 
+.nav a:active {
+	color: #5a5a5a;
+	border-color: #9a9a9a;
+}
+
+
+#search input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #eeeee7;
+	color: #eeeee7;
+	font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	width: 100%;
+	background-image: url(images/mag.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 24px;
+	font-size: 12px;
+	margin-bottom: 24px;
+}
+
+#search ul {
+	margin-left: 0px;
+	margin-bottom: 0px;
+}
+
+#search ul li {
+	list-style: none;
+	display: inline;
+	font-size: 12px;
+}
+
+#search ul li:last-child {
+	text-align: right;
+}
+
+#search ul li a {
+	color: #eeeee7;
+	display: inline-block;
+	width: 64px;
+	
+}
+
+#search ul li a:hover {
+	text-decoration: underline;
+}
+
+/*
+------------------------------------------------------------------------------ Footer
+*/
+
+#footer {	
+
+}
+
+#footer .jbasewrap {
+	height: 186px;
+}
+
+#footer ul.links {
+	position: absolute;
+	bottom: 12px;
+}
+
+/*
+------------------------------------------------------------------------------ Category Index Page
+*/
+
+ul.category {
+	padding-top: 1px;
+}
+
+ul.category li.grid12col {
+	margin-top: -1px;
+	border-bottom: 1px #ccc solid;	
+	margin-bottom: 12px;
+}
+
+/*
+------------------------------------------------------------------------------ Twitter Widget Overrides 
+*/
+
+#wrap div.tb_tweet {
+	border: none;
+	padding: 0px;
+}
+
+#wrap div.tb_tweet span {
+	line-height: 18px;
+	font-size: 13px;
+	display: block;
+	width: 160px;
+	float: right;
+	
+}
+
+#wrap div.tb_tweet span.tb_tweet-info {
+	margin-top: ;
+	margin-bottom: 12px;
+}
+
+#wrap div.tb_tweet img {
+	width: 48px;
+	height: 48px;
+	border: none;
+	padding: 0px;
+	margin-right: 12px;
+}
+
+/*
+------------------------------------------------------------------------------ WP image treatment for posts 
+*/
+
+.alignleft, img.alignleft {
+	margin-right: 20px;
+	display: inline;
+	float: left;
+	}
+.alignright, img.alignright {
+	margin-left: 20px;
+	display: inline;
+	float: right;
+	}
+.aligncenter, img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+	}
+.alignnone, img.alignnone {
+	/* not sure about this one */
+	}
+.wp-caption {
+	margin-bottom: 24px;
+	text-align: center;
+	padding-top: 6px;
+	}
+.wp-caption img {
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+	}
+.wp-caption p.wp-caption-text {
+	line-height: 18px;
+	font-size: 13px;
+	margin: 0;
+	}
+
+#vidContainer_wrapper {
+	border: 1px solid #eaeaea;
+}
+
+
+/*
+------------------------------------------------------------------------------ Disqus Comment Overrides 
+*/
+
+#wrap #dsq-content #dsq-global-toolbar .dsq-global-toolbar-left  {
+	display: none;
+}
+
+#wrap #dsq-comments {
+	margin-top: 24px;
+}
+
+/*
+------------------------------------------------------------------------------ Browser fixes & workarounds
+*/
+
+.ie6 a.arrow span {
+	border-top: #fff solid 9px;
+	border-bottom: #fff solid 9px;
+}
+
+
