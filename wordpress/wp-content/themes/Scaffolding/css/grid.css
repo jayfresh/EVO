@@ -2,7 +2,7 @@
 
 .....................................
 
-jBase - Grid 
+jBase - 24 col Grid 
 
 http://www.withjandj.com/jbase
 https://github.com/Joshuwar/fragments
@@ -41,7 +41,7 @@ TO-DO
 }
 
 body {
-	min-width: 960px;
+	min-width: 970px;
 }
 
 
@@ -51,52 +51,102 @@ body {
 ................................................................................................ */
 
 .grid1col {
-	width:60px;
+	width:30px;
 }
 
 .grid2col {
-	width:140px;
+	width:70px;
 }
 
 .grid3col {
-	width:220px;
+	width:110px;
 }
 
 .grid4col {
-	width:300px;
+	width:150px;
 }
 
 .grid5col {
-	width:380px;
+	width:190px;
 }
 
 .grid6col {
-	width:460px;
+	width:230px;
 }
 
 .grid7col {
-	width:540px;
+	width:270px;
 }
 
 .grid8col {
-	width:620px;
+	width:310px;
 }
 
 .grid9col {
-	width:700px;
+	width:350px;
 }
 
 .grid10col {
-	width:780px;
+	width:390px;
 }
 
 .grid11col {
-	width:860px;
+	width:430px;
 }
 
 .grid12col {
-	width:940px;
+	width:470px;
 }
+
+.grid13col {
+	width:510px;
+}
+
+.grid14col {
+	width:550px;
+}
+
+.grid15col {
+	width:590px;
+}
+
+.grid16col {
+	width:630px;
+}
+
+.grid17col {
+	width:670px;
+}
+
+.grid18col {
+	width:710px;
+}
+
+.grid19col {
+	width:750px;
+}
+
+.grid20col {
+	width:790px;
+}
+
+.grid21col {
+	width:830px;
+}
+
+.grid22col {
+	width:870px;
+}
+
+.grid23col {
+	width:910px;
+}
+
+.grid24col {
+	width:950px;
+}
+
+
 
 
 /* 		Columns with boxes
@@ -104,218 +154,102 @@ body {
 ................................................................................................ */
 
 .grid1col.box, .ie6 .grid1col-box {
-	width: 20px;
+	width: 10px;
 }
 
 .grid2col.box, .ie6 .grid2col-box {
-	width: 100px;
+	width: 50px;
 }
 
 .grid3col.box, .ie6 .grid3col-box {
-	width: 180px
+	width: 90px
 }
 
 .grid4col.box, .ie6 .grid4col-box {
-	width: 260px
+	width: 130px
 }
 
 .grid5col.box, .ie6 .grid5col-box {
-	width: 180px
+	width: 170px
 }
 
 .grid6col.box, .ie6 .grid6col-box {
-	width: 420px;
+	width: 210px;
 }
 
 .grid7col.box, .ie6 .grid7col-box {
-	width: 500px
+	width: 250px
 }
 
 .grid8col.box, .ie6 .grid8col-box {
-	width: 580px;
+	width: 290px;
 }
 
 .grid9col.box, .ie6 .grid9col-box {
-	width: 660px;
+	width: 330px;
 }
 
 .grid10col.box, .ie6 .grid10col-box {
-	width: 740px
+	width: 370px
 }
 
 .grid11col.box, .ie6 .grid11col-box {
-	width: 820px
+	width: 410px
 }
 
 .grid12col.box, .ie6 .grid12col-box {
-	width: 900px;
+	width: 450px;
+}
+
+.grid13col.box, .ie6 .grid13col-box {
+	width: 490px;
+}
+
+.grid14col.box, .ie6 .grid14col-box {
+	width: 530px;
+}
+
+.grid15col.box, .ie6 .grid15col-box {
+	width: 570px
+}
+
+.grid16col.box, .ie6 .grid16col-box {
+	width: 610px
+}
+
+.grid17col.box, .ie6 .grid17col-box {
+	width: 650px
+}
+
+.grid18col.box, .ie6 .grid18col-box {
+	width: 690px;
+}
+
+.grid19col.box, .ie6 .grid19col-box {
+	width: 730px
+}
+
+.grid20col.box, .ie6 .grid20col-box {
+	width: 770px;
+}
+
+.grid21col.box, .ie6 .grid21col-box {
+	width: 810px;
+}
+
+.grid22col.box, .ie6 .grid22col-box {
+	width: 850px
+}
+
+.grid23col.box, .ie6 .grid23col-box {
+	width: 890px
+}
+
+.grid24col.box, .ie6 .grid24col-box {
+	width: 930px;
 }
 
 
-
-
-
-
-/* 			Boxes within Boxes 
-
-................................................................................................ */
-
-
-.box .grid1col.box {
-	width: 0px;
-}
-
-.box .grid2col.box {
-	width: 80px;
-}
-
-.box .grid3col.box {
-	width: 160px
-}
-
-.box .grid4col.box {
-	width: 240px; 
-}
-
-.box .grid5col.box {
-	width: 320px
-}
-
-.box .grid6col.box {
-	width: 400px;
-}
-
-.box .grid7col.box {
-	width: 480px
-}
-
-.box .grid8col.box {
-	width: 560px
-}
-
-.box .grid9col.box {
-	width: 640px;
-}
-
-.box .grid10col.box {
-	width: 720px
-}
-
-.box .grid11col.box {
-	width: 800px
-}
-
-.box .grid12col.box {
-	width: 880px;
-}
-
-
-
-
-/*			Rows of Boxes 
-			(uses first/last-child pseudo elements to push rows of boxes within boxes back onto the grid)
-
-................................................................................................ */
-
-.row {
-	overflow: hidden;
-}
-
-.row .grid1col.box {
-	width: 20px;
-}
-
-.row .grid2col.box {
-	width: 100px;
-}
-
-.row .grid3col.box {
-	width: 180px
-}
-
-.row .grid4col.box {
-	width: 260px; 
-}
-
-.row .grid5col.box {
-	width: 340px
-}
-
-.row .grid6col.box {
-	width: 420px;
-}
-
-.row .grid7col.box {
-	width: 500px
-}
-
-.row .grid8col.box {
-	width: 580px
-}
-
-.row .grid9col.box {
-	width: 660px;
-}
-
-.row .grid10col.box {
-	width: 740px
-}
-
-.row .grid11col.box {
-	width: 820px
-}
-
-.row .grid12col.box {
-	width: 900px;
-}
-
-.row > .grid1col.box:first-child, .row > .grid1col.box:last-child {
-	width: 0px;
-}
-
-.row > .box.grid2col:first-child, .row > .grid2col.box:last-child {
-	width: 80px;
-}
-
-.row > .grid3col.box:first-child, .row > .grid3col.box:last-child {
-	width: 160px;
-}
-
-.row > .grid4col.box:first-child, .row > .grid4col.box:last-child {
-	width: 240px;
-}
-
-.row > .grid5col.box:first-child, .row > .grid5col.box:last-child {
-	width: 320px;
-}
-
-.row > .grid6col.box:first-child, .row > .grid6col.box:last-child {
-	width: 400px;
-}
-
-.row > .grid7col.box:first-child, .row > .grid7col.box:last-child {
-	width: 480px;
-}
-
-.row > .grid8col.box:first-child, .row > .grid8col.box:last-child {
-	width: 560px;
-}
-
-.row > .grid9col.box:first-child, .row > .grid9col.box:last-child {
-	width: 640px;
-}
-
-.row > .grid10col.box:first-child, .row > .grid10col.box:last-child {
-	width: 720px;
-}
-
-.row > .grid11col.box:first-child, .row > .grid11col.box:last-child {
-	width: 800px;
-}
-
-.row > .grid12col.box:first-child, .row > .grid12col.box:last-child {
-	width: 880px;
-}
 
 
 /*			Modifiers
@@ -324,11 +258,11 @@ body {
 
 
 .marginleft {
-	margin-left:20px;
+	margin-left:10px;
 }
 
 .marginright {
-	margin-right:20px;
+	margin-right:10px;
 }
 
 .left {
@@ -379,7 +313,7 @@ body {
 
 
 .box {
-	padding: 12px 20px 12px;
+	padding: 12px 10px 12px;
 	margin-bottom: 24px;
 }
 
