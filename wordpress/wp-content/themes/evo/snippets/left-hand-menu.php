@@ -1,7 +1,7 @@
 <?php
 // generate menu based on child pages
 // it is anticipated this will only show on single pages
-$query = new WP_query("post_type=case_study&post_parent=".$post->ID);
+$query = new WP_query("post_parent=".$post->ID);
 if($query->have_posts()) : ?>
 	<ul>
 		<?php while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -9,4 +9,3 @@ if($query->have_posts()) : ?>
 		<?php endwhile; ?>
 	</ul>
 <?php endif; ?>
-?>
