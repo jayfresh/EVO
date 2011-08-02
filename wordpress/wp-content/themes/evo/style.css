@@ -499,6 +499,48 @@ ul.breadcrumb li a:hover {
 }
 
 /*
+------------------------------------------------------------------------------ Article Styles 
+*/
+
+div.article {
+	background-color: white;
+	padding: 18px 10px 12px 10px;
+	margin-bottom: 12px;
+	background-image: url(images/dots.png);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+	color: #fe001a;
+	font-weight: bold;
+}
+
+.article h1 span.subhead {
+	font-size: 18px;
+	display: block;
+}
+
+.article p.large {
+	font-size: 16px;
+	line-height: 18px;
+	margin-top: 24px;
+	margin-bottom: 18px;
+}
+
+.article h6 {
+	font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin-bottom: 0px;
+}
+
+
+/*
 ------------------------------------------------------------------------------ Footer
 */
 
@@ -558,6 +600,10 @@ ul.category li.grid12col {
 	border: none;
 	padding: 0px;
 	margin-right: 12px;
+}
+
+p.small, span.small, ul.small, ol.small, blockquote.small {
+    padding: 0 0;
 }
 
 /*
