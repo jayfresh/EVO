@@ -466,7 +466,46 @@ ul.sidebar li a:hover {
 	background-color: #dae700;
 }
 
+/*
+------------------------------------------------------------------------------ Breadcrumbs
+*/
 
+ul.breadcrumb {
+	margin-left: 0px;
+	font-size: 11px;
+	background-color: white;
+	padding: 12px 0px 6px 10px;
+	background-image: url(images/dots.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+ul.breadcrumb li {
+	display: inline;
+	list-style: none;
+}
+
+ul.breadcrumb li a {
+	display: inline;
+	list-style: none;
+	color: #636466;
+}
+
+ul.breadcrumb li:after {
+	content: '/';
+	padding: 0px 5px 0px 8px;
+}
+
+ul.breadcrumb li:last-child:after {
+	content: '';
+	padding: 0px;
+}
+
+
+ul.breadcrumb li a:hover {
+	color: #fe001a;
+	text-decoration: underline;
+}
 
 /*
 ------------------------------------------------------------------------------ Footer
