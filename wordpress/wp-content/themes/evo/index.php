@@ -5,10 +5,10 @@ get_template_part('snippets/header'); ?>
 
 <div class="grid24col innerWrap">
 	<?php
-	get_template_part('snippets/left-hand-menu'); 
+	get_template_part('snippets/left-hand-menu');
 	get_template_part('snippets/breadcrumbs'); ?>
 	
-	<div class="article grid18col right">
+	<div class="grid18col right">
 		<?php
 		get_template_part('loop');
 		?>
