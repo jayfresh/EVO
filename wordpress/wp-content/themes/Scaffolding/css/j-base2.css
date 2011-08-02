@@ -39,7 +39,7 @@ Licensed under GPL and MIT.
 
 body {
 	font-size: 15px;
-	line-height: 24px;
+	line-height: 18px;
 	position: relative;
 }
 
@@ -47,10 +47,10 @@ html {
 }
 
 .jbasewrap {
-	width: 960px;
+	width: 970px;
 	margin: auto;
 	position: relative;
-	padding: 0px 20px;
+	padding: 0px 10px;
 }
 
 a {

@@ -1,6 +1,6 @@
 <?php
 get_header();
-get_template_part('snippets/top-menu'); ?>
+get_template_part('snippets/header'); ?>
 <!-- home page structure here -->
 
 <p>carousel</p>
@@ -19,5 +19,5 @@ if($child_pages->have_posts()) : ?>
 	<?php endwhile; ?>
 </ul>
 <?php endif; ?>
-<?php get_template_part('snippets/footer-menu'); ?>
+<?php get_template_part('snippets/footer'); ?>
 <?php get_footer(); ?>

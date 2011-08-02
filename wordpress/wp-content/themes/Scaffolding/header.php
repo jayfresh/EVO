@@ -25,6 +25,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/j-base2.css" />
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/stickyfooter.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="shortcut icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.ico" />
@@ -49,5 +50,3 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<div id="wrapper">
-				
