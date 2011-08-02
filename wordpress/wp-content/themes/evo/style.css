@@ -85,7 +85,9 @@ p {
 	margin-bottom: 18px;
 }
 
-
+.margintop {
+	margin-top: 18px;
+}
 
 
 
@@ -324,6 +326,17 @@ ul.noBullets li {
 	width: 171px;
 	height: 162px;
 }
+
+ul#nav li {
+	list-style: none;
+}
+
+ul#nav {
+	width: 480px;
+	margin-left: 0px;
+	
+}
+
 
 ul.nav {
 	margin-bottom:0px;

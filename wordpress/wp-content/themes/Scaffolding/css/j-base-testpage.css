@@ -18,13 +18,15 @@ body {
 
 
 .grid {
-	background-image: url(../images/jbase/24px6inc_grid.png);
+	background-image: url(../images/v_grid.png);
 	background-repeat: repeat;
+	background-color: transparent;
 }
 
 .grid.jbasewrap {
-	background-image: url(../images/jbase/v-grid.png);
+	background-image: url(../images/h_grid.png);
 	background-repeat: repeat;
+	background-color: transparent;
 }
 
 .orange {
@@ -52,12 +54,10 @@ a.trigger {
 
 .box, .outbox {
 	background-color: transparent;
-	background-image: url(../images/jbase/box_bg.png);
 }
 
 .box.caseStudy, .outbox.caseStudy, .box.footer, .outbox.footer, .box.caption {
 	background-color: transparent;
-	background-image: url(../images/jbase/box_bg_casestudy.png);
 }
 
 .borderleft.outbox {
