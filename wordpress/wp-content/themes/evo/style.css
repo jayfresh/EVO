@@ -85,6 +85,12 @@ hr {
 	background-position: top left, bottom left;
 }
 
+.dottop {
+	background-image: url(images/dots.png);
+	background-repeat: repeat-x;
+	background-position: top left;
+}
+
 p {
 	margin-bottom: 18px;
 }
@@ -498,7 +504,7 @@ ul.sidebar li a:hover {
 	height: 6px;
 	background-image: url(images/dots.png);
 	background-repeat: repeat-x;
-	bottom: 0px;
+	bottom: 11px;
 	left: 0px;
 }
 
