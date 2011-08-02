@@ -1,4 +1,4 @@
-<div id="search" class="grid6col left box darkgrey">
+<div id="search" class="grid6col left box darkgrey marginleft">
 	<form action="<?php bloginfo('url'); ?>" method="get">
 		<input name="s" type="text" placeholder="Search" />
 	</form>
