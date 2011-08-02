@@ -15,6 +15,7 @@ Red:			#fe001a;
 Grey:			#d7d9dd;
 Text grey:		#636466;
 Green accent:	#dae700;
+Caption Text:	#00a3f8;
 
 */
 
@@ -274,9 +275,9 @@ blockquote {
 }
 
 .caption {
-	color: white;
-	font-style: italic;
+	color: #00a3f8;
 	letter-spacing: 0.02em;
+	font-size: 12px;
 }
 
 .borderleft {
@@ -380,6 +381,17 @@ ul.nav ul { /* a bit of styling to make this look nicer for non-JS */
 	color: #fe001a;
 }
 
+li#menu-count-0 {
+	background-image: url(images/infoArrow.png);
+	background-repeat: no-repeat;
+	background-position: 110px 5px;
+}
+
+li#menu-count-0:hover {
+	cursor: pointer;
+	background-position: 110px -38px;
+	color: #fe001a;
+}
 
 #search input {
 	background-color: transparent;
@@ -438,7 +450,7 @@ ul.sidebar li {
 
 ul.sidebar li a {
 	background-color: white;
-	height: 44px;
+	height: 42px;
 	padding: 12px 20px 0px 20px;
 	margin-bottom: 6px;
 	display: block;
@@ -446,6 +458,13 @@ ul.sidebar li a {
 	background-repeat: no-repeat;
 	background-position: 215px center;
 	color: #636466;
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
 }
 
 ul.sidebar li.active a {
@@ -546,6 +565,94 @@ div.article {
 	font-weight: normal;
 	margin-bottom: 0px;
 }
+
+.article ul {
+	margin-left: 18px;
+}
+
+.article ul li {
+	list-style:none;
+	position: relative;
+}
+
+.article ul li:before {
+	content: "\2022";
+	color: #fe001a;
+	left: -16px;
+	position: absolute;
+}
+
+/*
+------------------------------------------------------------------------------ Article Styles 
+*/
+
+
+div.sharing {
+	border: 1px dotted #636466;
+	border-width: 1px 0px;
+	overflow: hidden;
+	padding: 6px 0px;
+}
+
+div.sharing a {
+	text-indent: -999px;
+	display: block;
+	overflow: hidden;
+	width: 16px;
+	height: 15px;
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 1px; /* this compensates for the height of the icons and the addition of the borders on the sharing box, to step them back into line with the 6px incremental baseline - JB */
+}
+
+div.sharing a:last-child {
+	margin-right: 0px;
+}
+
+div.sharing a:hover {
+	opacity: 0.6;
+}
+
+a#facebook {
+	background-image: url(images/fb_icon.png);
+}
+a#twitter {
+	background-image: url(images/tw_icon.png);
+}
+a#email {
+	background-image: url(images/email_icon.png);
+	background-position: 0px 2px;
+}
+a#print {
+	background-image: url(images/print_icon.png);
+}
+
+a.block {
+	
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
+	width: 130px;
+	display: inline-block;
+	margin-right: 10px; 
+	padding: 10px;
+	height: 76px;
+	border: 1px dotted #636466;
+	border-width: 1px 0px;
+	margin-bottom: 12px;
+	color: #636466;
+	text-decoration: none;
+	background-color: #d0dade;
+}
+
+a.block:hover {
+	background-color: #e4ed76;
+}
+
+
 
 
 /*
