@@ -5,7 +5,7 @@ get_template_part('snippets/header'); ?>
 
 <div class="grid24col innerWrap">
 	<?php get_template_part('snippets/breadcrumbs'); ?>
-	<div class="grid18col right dottop padtop">
+	<div class="grid18col right">
 	<?php
 	get_template_part('loop');
 	?>
