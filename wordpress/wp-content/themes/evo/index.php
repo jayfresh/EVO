@@ -14,6 +14,7 @@ get_template_part('snippets/header'); ?>
 	
 
 	<br class="clearboth"/>
+	<div id="sidebarTerminal"></div>
 </div>
 
 <?php

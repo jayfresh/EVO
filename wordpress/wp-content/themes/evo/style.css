@@ -40,10 +40,6 @@ body {
 	position: relative;
 }
 
-.sidebarWrap {
-	height: 100%;
-}
-
 .bartop {
 	border-top: 3px solid #ccc;
 	padding-top: 3px;
@@ -495,6 +491,17 @@ ul.sidebar li.active a:hover {
 ul.sidebar li a:hover {
 	background-color: #dae700;
 }
+
+#sidebarTerminal {
+	position: absolute;
+	width: 230px;
+	height: 6px;
+	background-image: url(images/dots.png);
+	background-repeat: repeat-x;
+	bottom: 0px;
+	left: 0px;
+}
+
 
 /*
 ------------------------------------------------------------------------------ Breadcrumbs
