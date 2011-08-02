@@ -408,6 +408,13 @@ li#menu-count-0:hover {
 	margin-bottom: 24px;
 }
 
+::-webkit-input-placeholder {
+    color: #EEEEE7;
+}
+:-moz-placeholder {
+    color: #EEEEE7;
+}
+
 #search ul {
 	margin-left: 0px;
 	margin-bottom: 0px;
