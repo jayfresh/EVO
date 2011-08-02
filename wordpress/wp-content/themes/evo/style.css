@@ -23,22 +23,22 @@ Caption Text:	#00a3f8;
 
 @font-face {
     font-family: 'CalvertMTStdBold';
-    src: url('/fonts/calvertmtstd-bold-webfont.eot');
-    src: url('/fonts/calvertmtstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/calvertmtstd-bold-webfont.woff') format('woff'),
-         url('/fonts/calvertmtstd-bold-webfont.ttf') format('truetype'),
-         url('/fonts/calvertmtstd-bold-webfont.svg#CalvertMTStdBold') format('svg');
+    src: url('fonts/calvertmtstd-bold-webfont.eot');
+    src: url('fonts/calvertmtstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calvertmtstd-bold-webfont.woff') format('woff'),
+         url('fonts/calvertmtstd-bold-webfont.ttf') format('truetype'),
+         url('fonts/calvertmtstd-bold-webfont.svg#CalvertMTStdBold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CalvertMTStdLight';
-    src: url('/fonts/calvertmtstd-light-webfont.eot');
-    src: url('/fonts/calvertmtstd-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/calvertmtstd-light-webfont.woff') format('woff'),
-         url('/fonts/calvertmtstd-light-webfont.ttf') format('truetype'),
-         url('/fonts/calvertmtstd-light-webfont.svg#CalvertMTStdLight') format('svg');
+    src: url('fonts/calvertmtstd-light-webfont.eot');
+    src: url('fonts/calvertmtstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calvertmtstd-light-webfont.woff') format('woff'),
+         url('fonts/calvertmtstd-light-webfont.ttf') format('truetype'),
+         url('fonts/calvertmtstd-light-webfont.svg#CalvertMTStdLight') format('svg');
     font-weight: normal;
     font-style: normal;
 }
