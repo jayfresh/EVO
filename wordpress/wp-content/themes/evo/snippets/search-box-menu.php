@@ -10,4 +10,3 @@
 		)
 	); ?>
 </div>
-<input name="s2" type="text" placeholder="yo" />
