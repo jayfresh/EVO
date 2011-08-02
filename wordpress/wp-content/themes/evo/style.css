@@ -19,6 +19,8 @@ Caption Text:	#00a3f8;
 
 */
 
+/* NB These @fontface declarations (and the font files) are only to be used in the development site, until an appropriate embed service is sorted. - JB */
+
 @font-face {
     font-family: 'CalvertMTStdBold';
     src: url('/fonts/calvertmtstd-bold-webfont.eot');
