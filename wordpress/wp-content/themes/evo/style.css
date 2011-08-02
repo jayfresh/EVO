@@ -362,14 +362,6 @@ ul.nav ul {
 	margin-top: 12px;
 }
 
-.nav a {
-	-webkit-transition: all 0.2s ease-out;
-	-moz-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
-	-ms-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
-}
-
 .nav a:link, .nav a:visited {
 	color: #636466;
 	text-decoration: none;
@@ -378,8 +370,7 @@ ul.nav ul {
 
 .nav a:hover, 
 .nav a:active {
-	color: #5a5a5a;
-	border-color: #9a9a9a;
+	color: #fe001a;
 }
 
 
