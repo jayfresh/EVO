@@ -521,6 +521,7 @@ ul.breadcrumb {
 	background-image: url(images/dots.png);
 	background-repeat: repeat-x;
 	background-position: left top;
+	margin-bottom: 12px;
 }
 
 ul.breadcrumb li {
@@ -617,6 +618,7 @@ div.sharing {
 	border-width: 1px 0px;
 	overflow: hidden;
 	padding: 6px 0px;
+	margin-right: 30px;
 }
 
 div.sharing a {
