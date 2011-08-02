@@ -10,10 +10,11 @@ Template: Scaffolding
 /* 
 Base colours:
 
-Beige:		#eeeee7;
-Red:		#fe001a;
-Grey:		#d7d9dd;
-Text grey:	#636466;
+Beige:			#eeeee7;
+Red:			#fe001a;
+Grey:			#d7d9dd;
+Text grey:		#636466;
+Green accent:	#dae700;
 
 */
 
@@ -422,6 +423,50 @@ ul.nav ul {
 #search ul li a:hover {
 	text-decoration: underline;
 }
+
+/*
+------------------------------------------------------------------------------ Sidebar
+*/
+
+ul.sidebar {
+	margin-left: 0px;
+	font-family: 'Calvert MT Std';
+	font-size: 15px;
+}
+
+ul.sidebar li {
+	list-style: none;
+}
+
+ul.sidebar li a {
+	background-color: white;
+	height: 44px;
+	padding: 12px 20px 0px 20px;
+	margin-bottom: 6px;
+	display: block;
+	background-image: url(images/sidebarArrow.png);
+	background-repeat: no-repeat;
+	background-position: 215px center;
+	color: #636466;
+}
+
+ul.sidebar li.active a {
+	font-size:  16px;
+	color: #fe001a;
+	background-image: url(images/sidebarDots.png);
+	background-repeat: repeat-y;
+	background-position: top left;
+}
+
+ul.sidebar li.active a:hover {
+	background-color: white;
+}
+
+ul.sidebar li a:hover {
+	background-color: #dae700;
+}
+
+
 
 /*
 ------------------------------------------------------------------------------ Footer
