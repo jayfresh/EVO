@@ -357,8 +357,15 @@ ul.nav li {
 	margin-bottom: 12px;
 }
 
-ul.nav ul {
+ul.nav ul { /* a bit of styling to make this look nicer for non-JS */
+	font-size: 80%;
+	line-height: 100%;
+}
+
+.js ul.nav ul {
 	display: none;
+	font-size: inherit;
+	line-height: inherit;
 	margin-top: 12px;
 }
 
@@ -447,6 +454,7 @@ ul.sidebar li.active a {
 	background-image: url(images/sidebarDots.png);
 	background-repeat: repeat-y;
 	background-position: top left;
+	cursor: default;
 }
 
 ul.sidebar li.active a:hover {
