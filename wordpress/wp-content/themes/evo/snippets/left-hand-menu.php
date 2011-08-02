@@ -1,4 +1,3 @@
-<p>left-hand menu start</p>
 <?php
 // generate menu based on child pages
 // it is anticipated this will only show on single pages
@@ -26,4 +25,3 @@ if($query->have_posts()) : ?>
 		<?php endwhile; wp_reset_query(); ?>
 	</ul>
 <?php endif; ?>
-<p>left-hand menu end</p>
