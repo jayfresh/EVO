@@ -357,7 +357,7 @@ ul.nav li {
 	margin-bottom: 12px;
 }
 
-ul.nav ul { /* a bit of styling to make this looker nicer for non-JS */
+ul.nav ul { /* a bit of styling to make this look nicer for non-JS */
 	font-size: 80%;
 	line-height: 100%;
 }
