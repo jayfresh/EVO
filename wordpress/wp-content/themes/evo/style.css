@@ -19,6 +19,32 @@ Caption Text:	#00a3f8;
 
 */
 
+/* NB These @fontface declarations (and the font files) are only to be used in the development site, until an appropriate embed service is sorted. - JB */
+
+@font-face {
+    font-family: 'CalvertMTStdBold';
+    src: url('fonts/calvertmtstd-bold-webfont.eot');
+    src: url('fonts/calvertmtstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calvertmtstd-bold-webfont.woff') format('woff'),
+         url('fonts/calvertmtstd-bold-webfont.ttf') format('truetype'),
+         url('fonts/calvertmtstd-bold-webfont.svg#CalvertMTStdBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CalvertMTStdLight';
+    src: url('fonts/calvertmtstd-light-webfont.eot');
+    src: url('fonts/calvertmtstd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calvertmtstd-light-webfont.woff') format('woff'),
+         url('fonts/calvertmtstd-light-webfont.ttf') format('truetype'),
+         url('fonts/calvertmtstd-light-webfont.svg#CalvertMTStdLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body {
 	font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #636466;
@@ -38,10 +64,6 @@ body {
 
 .innerWrap {
 	position: relative;
-}
-
-.sidebarWrap {
-	height: 100%;
 }
 
 .bartop {
@@ -89,6 +111,12 @@ hr {
 	background-position: top left, bottom left;
 }
 
+.dottop {
+	background-image: url(images/dots.png);
+	background-repeat: repeat-x;
+	background-position: top left;
+}
+
 p {
 	margin-bottom: 18px;
 }
@@ -105,12 +133,10 @@ p {
 */
 
 h1, h2, h3, h4, h5, h6, .large {
-	font-family: 'Calvert MT Std';
-	font-weight: ;
+	font-family: 'CalvertMTStdLight';
+	font-weight: normal;
 	letter-spacing: 0.03em;
 }
-
-
 
 h1.fixed, h2.fixed, h3.fixed, h4.fixed, h5.fixed, h6.fixed {
 	font-size: 11px;
@@ -120,8 +146,8 @@ h1.fixed, h2.fixed, h3.fixed, h4.fixed, h5.fixed, h6.fixed {
 }
 .fixed {
 	margin-bottom: 6px;
-	font-family: 'Calvert MT Std';
-	font-weight: bold;
+	font-family: 'CalvertMTStdBold';
+	font-weight: normal;
 	font-size: 11px;
 	color: #636466;
 	text-transform: uppercase;
@@ -453,7 +479,7 @@ li#menu-count-0:hover {
 
 ul.sidebar {
 	margin-left: 0px;
-	font-family: 'Calvert MT Std';
+	font-family: 'CalvertMTStdLight';
 	font-size: 15px;
 }
 
@@ -496,6 +522,17 @@ ul.sidebar li a:hover {
 	background-color: #dae700;
 }
 
+#sidebarTerminal {
+	position: absolute;
+	width: 230px;
+	height: 6px;
+	background-image: url(images/dots.png);
+	background-repeat: repeat-x;
+	bottom: 11px;
+	left: 0px;
+}
+
+
 /*
 ------------------------------------------------------------------------------ Breadcrumbs
 */
@@ -508,6 +545,7 @@ ul.breadcrumb {
 	background-image: url(images/dots.png);
 	background-repeat: repeat-x;
 	background-position: left top;
+	margin-bottom: 12px;
 }
 
 ul.breadcrumb li {
@@ -557,7 +595,8 @@ div.article {
 .article h5,
 .article h6 {
 	color: #fe001a;
-	font-weight: bold;
+	font-family: 'CalvertMTStdBold', 'Rockwell Std', Helvetica, Arial, sans-serif;
+	font-weight: normal;
 }
 
 .article h1 span.subhead {
@@ -604,6 +643,7 @@ div.sharing {
 	border-width: 1px 0px;
 	overflow: hidden;
 	padding: 6px 0px;
+	margin-right: 30px;
 }
 
 div.sharing a {
