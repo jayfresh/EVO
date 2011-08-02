@@ -40,6 +40,10 @@ body {
 	position: relative;
 }
 
+.sidebarWrap {
+	height: 100%;
+}
+
 .bartop {
 	border-top: 3px solid #ccc;
 	padding-top: 3px;
