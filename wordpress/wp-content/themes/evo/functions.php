@@ -87,13 +87,27 @@ class Multiple_UL_Walker extends Walker_Nav_Menu
     }
     function end_el(&$output, $item, $depth, $args) {
 		global $menu_count;
+		global $menu_limit;
 		$output .= "</li>\n";
 	   	if($depth==0) {
-		   	if($menu_count==0 || $menu_count % 3 == 1) {
+		   	if($menu_count==0 || $menu_count % 3 == 1 || $menu_count==$menu_limit) {
 	    		$output .= "</ul></li>";
     		}
     	}
     }
 }
+
+function nav_menu_func($sorted_menu_items, $args) {
+	global $menu_limit;
+	$menu_limit=0;
+	foreach($sorted_menu_items as $item) :
+		if($item->menu_item_parent==0) {
+			$menu_limit++;
+		}
+	endforeach;
+	return $sorted_menu_items;
+}
+
+add_filter('wp_nav_menu_objects', nav_menu_func, 10, 2);
 
 ?>
