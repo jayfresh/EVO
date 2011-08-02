@@ -3,7 +3,7 @@
 get_header();
 get_template_part('snippets/header'); ?>
 
-<div class="grid24col innerWrap">
+<div class="grid24col innerWrap push2">
 	<?php get_template_part('snippets/breadcrumbs'); ?>
 	<div class="grid18col right">
 	<?php
