@@ -475,7 +475,6 @@ ul.sidebar li a {
 }
 
 ul.sidebar li.active a {
-	font-size:  16px;
 	color: #fe001a;
 	background-image: url(images/sidebarDots.png);
 	background-repeat: repeat-y;
