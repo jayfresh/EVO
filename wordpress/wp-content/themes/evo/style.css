@@ -447,6 +447,7 @@ ul.sidebar li.active a {
 	background-image: url(images/sidebarDots.png);
 	background-repeat: repeat-y;
 	background-position: top left;
+	cursor: default;
 }
 
 ul.sidebar li.active a:hover {
