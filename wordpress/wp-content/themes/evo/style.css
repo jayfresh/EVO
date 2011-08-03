@@ -516,6 +516,10 @@ ul.sidebar li {
 	list-style: none;
 }
 
+ul.sidebar li:first-child {
+	font-size: 17px;
+}
+
 ul.sidebar li a {
 	background-color: white;
 	height: 42px;
