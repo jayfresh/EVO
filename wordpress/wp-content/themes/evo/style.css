@@ -751,8 +751,8 @@ ul#homeLinks {
 
 ul#homeLinks li {
 	list-style: none;
-	display: inline;
-	
+	float: left;
+	display: block;
 }
 
 ul#homeLinks li a {
