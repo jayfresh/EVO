@@ -15,7 +15,7 @@ get_template_part('snippets/header');
 		<img src="<?php bloginfo('stylesheet_directory');?>/images/carousel.jpg"/>
 	</div>
 </div>
-<div class="grid24col innerWrap push3">
+<div class="grid24col innerWrap push4">
 	<?php $post = get_post_by_slug('global-partnerships','page'); ?>
 	<div id="globalPartnerships" class="grid8col left box border">
 		<h2 class="fixed"><?php the_title(); ?></h2>
