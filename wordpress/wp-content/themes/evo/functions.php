@@ -117,4 +117,24 @@ function add_scripts() {
  
 add_action('init', 'add_scripts');
 
+
+/* addThis widget */
+
+function addThis() { ?>
+<div class="addthis_toolbox addthis_default_style">
+   <div class="custom_images">
+      <a class="addthis_button_facebook"></a>
+      <a class="addthis_button_twitter"></a>
+      <a class="addthis_button_email"></a>
+      <a class="addthis_button_print"></a>
+   </div>
+</div>	
+<?php }
+
+add_action('wp_footer', 'addThisScript');
+
+function AddThisScript() { ?>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
+<?php }
+
 ?>

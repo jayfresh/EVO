@@ -1,10 +1,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="article">
 	<div class="grid3col sharing right">
-		<a id="facebook" href="#">Share on Facebook</a>
-		<a id="twitter" href="#">Share on Twitter</a>
-		<a id="email" href="#">Share by email</a>
-		<a id="print" href="#">Print this page</a>
+		<?php addThis(); ?>
 	</div>
 	<div class="grid13col">
 		<?php if(is_singular()) : ?>
