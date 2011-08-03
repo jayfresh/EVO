@@ -413,10 +413,14 @@ ul.nav ul { /* a bit of styling to make this look nicer for non-JS */
 	color: #fe001a;
 }
 
-li#menu-count-0 {
+li#menu-count-0 ul li {
 	background-image: url(images/infoArrow.png);
 	background-repeat: no-repeat;
 	background-position: 110px 5px;
+}
+
+li#menu-count-0 ul li ul li { 
+	background-image: none;
 }
 
 li#menu-count-0:hover {
