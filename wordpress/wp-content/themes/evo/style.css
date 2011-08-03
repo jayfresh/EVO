@@ -125,6 +125,13 @@ p {
 	margin-top: 18px;
 }
 
+#globalPartnerships p.large, #getInvolved p.large {
+	line-height: 18px;
+	font-family: 'CalvertMTStdBold';
+	font-size: 15px;
+	margin-top: 12px;
+}
+
 
 
 
@@ -708,6 +715,60 @@ a.block:hover {
 	background-color: #e4ed76;
 }
 
+
+
+
+/*
+------------------------------------------------------------------------------ Home Page
+*/
+
+#getInvolved .box {
+	height: 300px;
+}
+
+#globalPartnerships {
+	height: 354px;
+}
+
+#informationFor {
+	height: 378px;
+}
+
+#informationFor h2 {
+	font-family: 'CalvertMTStdBold';
+	font-size: 17px;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+ul#homeLinks {
+	background-image: url(images/infoFor_bg.jpg);
+	height: 320px;
+	margin-left: 0px;
+	
+}
+
+ul#homeLinks li {
+	list-style: none;
+	display: inline;
+	
+}
+
+ul#homeLinks li a {
+	width: 120px;
+	border-right: 5px solid #eeeee7;
+	display: inline-block;
+	height: 100%;
+}
+
+ul#homeLinks li:last-child a {
+	border-right: none;
+}
+
+
+.carousel img {
+	height: 324px;
+}
 
 
 
