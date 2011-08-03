@@ -1,13 +1,21 @@
 <?php
 get_header();
-get_template_part('snippets/header'); ?>
+get_template_part('snippets/header');
+global $post;
+?>
 <!-- home page structure here -->
 
 <p>carousel</p>
 
-<p>get involved</p>
+<?php $post = get_post_by_slug('get-involved','page'); ?>
+<h2><?php the_title(); ?></h2>
+<p class="standfirst"><?php the_excerpt(); ?></p>
+<p class="article"><?php the_content(); ?>
 
-<p>global partnerships</p>
+<?php $post = get_post_by_slug('global-partnerships','page'); ?>
+<h2><?php the_title(); ?></h2>
+<p class="standfirst"><?php the_excerpt(); ?></p>
+<p class="article"><?php the_content(); ?>
 
 <p>information for:</p>
 <?php $top_page = get_post_by_slug('information-for','page');
