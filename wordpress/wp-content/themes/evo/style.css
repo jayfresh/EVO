@@ -804,12 +804,7 @@ ul#homeLinks li:last-child a {
 }
 
 #footer .jbasewrap {
-	height: 186px;
-}
-
-#footer ul.links {
-	position: absolute;
-	bottom: 12px;
+	height: 138px;
 }
 
 /*
