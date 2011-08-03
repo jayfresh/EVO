@@ -110,4 +110,11 @@ function nav_menu_func($sorted_menu_items, $args) {
 
 add_filter('wp_nav_menu_objects', nav_menu_func, 10, 2);
 
+function add_scripts() {
+	$template_url = get_bloginfo( 'stylesheet_directory' );
+	wp_enqueue_script('hoverIntent',$template_url.'/js/jquery.hoverIntent.min.js','','',true);
+}    
+ 
+add_action('init', 'add_scripts');
+
 ?>
