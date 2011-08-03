@@ -752,7 +752,8 @@ ul#homeLinks {
 	background-image: url(images/infoFor_bg.jpg);
 	height: 320px;
 	margin-left: 0px;
-	
+	position: relative;
+	margin-bottom: 0px;	
 }
 
 ul#homeLinks li {
@@ -762,10 +763,25 @@ ul#homeLinks li {
 }
 
 ul#homeLinks li a {
-	width: 120px;
+	width: 97px;
 	border-right: 5px solid #eeeee7;
 	display: inline-block;
-	height: 100%;
+	height: 302px;
+	font-family: CalvertMTStdLight;
+	color: white;
+	padding: 18px 20px 0px 5px;	
+	font-size: 16px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+ul#homeLinks li a:hover {
+	background-color: #eeeee7;
+	color: #fe001a;
+	
 }
 
 ul#homeLinks li:last-child a {
