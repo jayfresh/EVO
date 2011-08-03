@@ -913,6 +913,24 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 }
 
 /*
+------------------------------------------------------------------------------ Sharing button image overrides
+*/
+.addthis_button_facebook span {
+	background: url(images/fb_icon.png) transparent 0 0 no-repeat;
+}
+.addthis_button_twitter span {
+	background: url(images/tw_icon.png) transparent 0 0 no-repeat;
+}
+.addthis_button_email span {
+	background: url(images/email_icon.png) transparent 0 0 no-repeat;
+}
+.addthis_button_print span {
+	background: url(images/print_icon.png) transparent 0 0 no-repeat;
+}
+.addthis_toolbox .custom_images a {
+	padding: 0;
+}
+/*
 ------------------------------------------------------------------------------ Browser fixes & workarounds
 */
 
