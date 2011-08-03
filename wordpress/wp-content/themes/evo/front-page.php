@@ -1,28 +1,37 @@
 <?php
 get_header();
 get_template_part('snippets/header');
+global $post;
 ?>
 <!-- home page structure here -->
 <div class="grid24col innerWrap push2">
-	<?php $post = get_post_by_slug('get-involved','page'); ?>
+	<?php $query = new WP_Query('name=get-involved&post_type=page');
+	if($query->have_posts()) :
+		while($query->have_posts()) : $query->the_post(); ?>
 	<div id="getInvolved" class="grid8col right box grey border">
 		<h2 class="fixed"><?php the_title(); ?></h2>
 		<p class="large"><?php echo get_the_excerpt(); ?></p>
 		<?php the_content(); ?>
 		<a class="readMore pull1" href="#">Read More</a>
 	</div>
+	<?php endwhile;
+		endif; ?>
 	<div class="grid16col carousel">
 		<img src="<?php bloginfo('stylesheet_directory');?>/images/carousel.jpg"/>
 	</div>
 </div>
 <div class="grid24col innerWrap push4">
-	<?php $post = get_post_by_slug('global-partnerships','page'); ?>
+	<?php $query = new WP_Query('name=global-partnerships&post_type=page');
+	if($query->have_posts()) :
+		while($query->have_posts()) : $query->the_post(); ?>
 	<div id="globalPartnerships" class="grid8col left box border">
 		<h2 class="fixed"><?php the_title(); ?></h2>
 		<p class="large"><?php echo get_the_excerpt(); ?></p>
 		<?php the_content(); ?>
 		<a class="readMore pull1" href="#">Read More</a>
 	</div>
+	<?php endwhile;
+		endif; ?>
 	<div id="informationFor" class="grid16col carousel border right">
 		<h2 class="small">Information For</h2>
 		<?php $top_page = get_post_by_slug('information-for','page');
