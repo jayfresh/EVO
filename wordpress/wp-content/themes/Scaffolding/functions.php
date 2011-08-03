@@ -19,6 +19,26 @@ if ( function_exists( 'register_nav_menu' ) ) {
 	register_nav_menu( 'footer_menu', 'Footer Menu' );
 }
 
+function sitemap_shortcode($atts) {
+	$args = array(
+		'depth'        => 0,
+		'show_date'    => '',
+		'date_format'  => get_option('date_format'),
+		'child_of'     => 0,
+		'exclude'      => '',
+		'include'      => '',
+		'title_li'     => '',
+		'echo'         => 1,
+		'authors'      => '',
+		'sort_column'  => 'menu_order, post_title',
+		'link_before'  => '',
+		'link_after'   => '',
+		'walker' => '' ); ?>
+	<ul>
+	<?php wp_list_pages($args); ?>
+	</ul>
+<?php }
+add_shortcode('sitemap', 'sitemap_shortcode');
 
 // Utility functions
 function get_post_by_slug( $slug, $post_type='post' ) {
