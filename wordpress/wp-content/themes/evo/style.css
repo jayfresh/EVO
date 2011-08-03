@@ -288,12 +288,23 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, li a:hov
 	font-size: 11px;
 	letter-spacing: 0.06em;
 	overflow: hidden;
+	position: relative;
+	top: 32px;
 }
 
 .footer ul.links li {
 	list-style: none;
 	float: left;
-	margin-right: 20px;
+}
+
+.footer ul.links li:after {
+	content: '|';
+	padding: 0px 10px 0px 10px;
+	color: #636466;
+}
+
+.footer ul.links li:last-child:after {
+	content: '';
 }
 
 .meta {
@@ -408,7 +419,7 @@ ul.nav ul { /* a bit of styling to make this look nicer for non-JS */
 	background-color: #FFF;
 	position: relative;
 	left: -10px;
-	padding: 0 10px;
+	padding: 10px 10px 5px 10px;
 	width: 139px;
 	font-size: inherit;
 	line-height: inherit;
@@ -804,7 +815,7 @@ ul#homeLinks li:last-child a {
 }
 
 #footer .jbasewrap {
-	height: 138px;
+	height: 102px;
 }
 
 /*
