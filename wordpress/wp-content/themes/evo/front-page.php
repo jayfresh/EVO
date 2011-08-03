@@ -18,6 +18,10 @@ global $post;
 		endif; ?>
 	<div class="grid16col carousel">
 		<img src="<?php bloginfo('stylesheet_directory');?>/images/carousel.jpg"/>
+		<p>What are the uncertainties surrounding predictions of change in global soil carbon stocks in response to climate change?</p>
+		<a href="#" class="answer"><span></span> Answer</a>
+		<span class="prev">prev</span>
+		<span class="next">next</span>
 	</div>
 </div>
 <div class="grid24col innerWrap push4">

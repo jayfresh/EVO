@@ -516,6 +516,10 @@ ul.sidebar li {
 	list-style: none;
 }
 
+ul.sidebar li:first-child {
+	font-size: 17px;
+}
+
 ul.sidebar li a {
 	background-color: white;
 	height: 42px;
@@ -774,7 +778,7 @@ ul#homeLinks li {
 }
 
 ul#homeLinks li a {
-	width: 97px;
+	width: 94px;
 	border-right: 5px solid #eeeee7;
 	display: inline-block;
 	height: 302px;
