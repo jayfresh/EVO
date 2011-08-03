@@ -778,7 +778,7 @@ ul#homeLinks li a {
 	border-right: 5px solid #eeeee7;
 	display: inline-block;
 	height: 302px;
-	font-family: CalvertMTStdLight;
+	font-family: 'CalvertMTStdLight';
 	color: white;
 	padding: 18px 20px 0px 5px;	
 	font-size: 16px;
@@ -799,11 +799,52 @@ ul#homeLinks li:last-child a {
 	border-right: none;
 }
 
+.carousel {
+	position: relative;
+}
 
 .carousel img {
 	height: 324px;
 }
 
+.carousel p {
+	color: white;
+    font-family: 'CalvertMTStdLight';
+    font-size: 38px;
+    letter-spacing: 0.02em;
+    line-height: 42px;
+    padding: 0 116px 0 18px;
+    position: absolute;
+    top: 10px;
+}
+
+.carousel a.answer {
+	color: white;
+    font-family: 'CalvertMTStdLight';
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    padding: 0 0 0 18px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 70px;
+    left: 0px;
+    text-decoration: none;
+}
+
+.carousel .prev, .carousel .next {
+	bottom: 25px;
+	position: absolute;
+	color: white;
+	width: 40px;
+}
+
+.carousel .prev {
+	left: 10px;
+}
+
+.carousel .next {
+	right: 10px;	
+}
 
 
 /*
