@@ -7,10 +7,10 @@ get_template_part('snippets/header'); ?>
 	<?php get_template_part('snippets/breadcrumbs'); ?>
 	<div class="grid18col right">
 	<?php
-	get_template_part('news-loop');
+	get_template_part('loop');
 	?>
 	</div>
-	<?php get_template_part('snippets/news-left-hand-menu'); ?>
+	<?php get_template_part('snippets/left-hand-menu'); ?>
 	
 
 	<br class="clearboth"/>
