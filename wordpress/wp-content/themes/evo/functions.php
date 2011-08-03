@@ -67,7 +67,7 @@ class Multiple_UL_Walker extends Walker_Nav_Menu
             and $attributes .= ' href="'   . esc_attr( $item->url        ) .'"';
 
         $title = apply_filters( 'the_title', $item->title, $item->ID );
-
+        
         $item_output = $args->before
             . "<a $attributes>"
             . $args->link_before
