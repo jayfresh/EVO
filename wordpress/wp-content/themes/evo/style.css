@@ -778,7 +778,7 @@ ul#homeLinks li a {
 	border-right: 5px solid #eeeee7;
 	display: inline-block;
 	height: 302px;
-	font-family: CalvertMTStdLight;
+	font-family: 'CalvertMTStdLight';
 	color: white;
 	padding: 18px 20px 0px 5px;	
 	font-size: 16px;
@@ -799,12 +799,80 @@ ul#homeLinks li:last-child a {
 	border-right: none;
 }
 
+.carousel {
+	position: relative;
+	width: 615px;
+}
 
 .carousel img {
 	height: 324px;
 }
 
+.carousel p {
+	color: white;
+    font-family: 'CalvertMTStdLight';
+    font-size: 38px;
+    letter-spacing: 0.02em;
+    line-height: 42px;
+    padding: 0 100px 0 18px;
+    position: absolute;
+    top: 10px;
+}
 
+.carousel a.answer {
+	color: white;
+    font-family: 'CalvertMTStdLight';
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    padding: 0 0 0 38px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 70px;
+    left: 0px;
+    text-decoration: none;
+}
+
+.carousel a.answer span {
+	border: 10px solid white;
+	border-width: 7px 0px 7px 7px;
+	border-color: transparent transparent transparent white;
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: relative;
+	left: -18px;
+	top: 15px;
+}
+
+.carousel .prev, .carousel .next {
+	bottom: 25px;
+	position: absolute;
+	color: white;
+	width: 10px;
+	height: 21px;
+	text-indent: -999px;
+	display: block;
+	overflow: hidden;
+	opacity: 0.6;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.carousel .prev {
+	left: 10px;
+	background-image: url(images/carouselArrow.png);
+	
+}
+
+.carousel .next {
+	right: 10px;	
+	background-image: url(images/carouselArrow2.png);
+}
+
+.carousel .prev:hover, .carousel .next:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
 
 /*
 ------------------------------------------------------------------------------ Footer
