@@ -11,6 +11,7 @@ add_custom_image_header();
 // Allow for a custom background
 add_custom_background();
 
+add_post_type_support('page', 'excerpt');
 
 // Register Main and Footer Menu
 if ( function_exists( 'register_nav_menu' ) ) {
