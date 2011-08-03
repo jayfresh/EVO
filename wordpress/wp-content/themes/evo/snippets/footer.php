@@ -8,7 +8,7 @@
 				<?php get_template_part('snippets/footer-menu'); ?>
 			</div>
 			<div class="grid4col right">
-			<a href="<?php bloginfo('url'); ?>" class="logo left"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/nerc_logo.png" alt="EVO" title="NERC logo" /></a>
+			<a href="http://www.nerc.ac.uk/" class="logo left"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/nerc_logo.png" alt="National Environment Research Council (NERC) logo" title="National Environment Research Council (NERC) logo" /></a>
 			</div>
 		
 		</div>
