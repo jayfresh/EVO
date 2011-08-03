@@ -1,10 +1,12 @@
 <?php
 // generate breadcrumbs based on any parent pages, starting with the home page
-$front_page_id = get_option('page_on_front');
-$front_page = get_post($front_page_id);
+$front_page = get_post(get_option('page_on_front'));
+$news_page = get_post(get_option('page_for_posts'));
 $parent_pages = array();
 if(is_home()) {
-	echo "is home";
+	$parent_pages = array($news_page);
+} else if(get_post_type($post)=='post') {
+	$parent_pages = array($news_page,$post);
 } else {
 	$parent_pages[] = $post;
 	$page_target = $post;
