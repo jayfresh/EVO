@@ -707,7 +707,7 @@ a#facebook {
 a#twitter {
 	background-image: url(images/tw_icon.png);
 }
-a#email, a.addthis_button_email {
+a#email, #wrap a.addthis_button_email {
 	background-image: url(images/email_icon.png);
 	background-position: 0px 2px;
 }
