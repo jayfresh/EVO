@@ -393,7 +393,7 @@ ul#nav {
 ul.nav {
 	margin-bottom:0px;
 	font-size: 12px;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.05em;
 	position: relative;
 	border-left: 1px solid #636466;
 	margin-left: 0px;
@@ -672,7 +672,10 @@ div.article {
 
 
 div.sharing {
-	border: 1px dotted #636466;
+	/* border: 1px dotted #636466; */
+	background-image: url(images/dots-singlerow.png), url(images/dots-singlerow.png);
+	background-repeat: repeat-x;
+	background-position: left top, left bottom;
 	border-width: 1px 0px;
 	overflow: hidden;
 	padding: 6px 0px;
