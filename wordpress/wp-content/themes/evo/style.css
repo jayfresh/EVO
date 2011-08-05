@@ -707,7 +707,16 @@ a#facebook {
 a#twitter {
 	background-image: url(images/tw_icon.png);
 }
-a#email, #wrap a.addthis_button_email {
+
+#wrap a.addthis_button_email {
+	background-image: url(images/email_icon.png);
+	background-position: 0px 2px;
+}
+
+
+
+
+a#email, #wrap span.at15t_email {
 	background-image: url(images/email_icon.png);
 	background-position: 0px 2px;
 }
