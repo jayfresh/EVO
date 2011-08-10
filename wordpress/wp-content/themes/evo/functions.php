@@ -274,4 +274,16 @@ if ( !function_exists('get_custom_field') ) {
 	}
 }
 
+function evo_widgets_init() {
+	register_sidebar( array(
+			'name' => __( 'News sidebar', 'evo' ),
+			'id' => 'news-sidebar',
+			'description' => __( 'Where to put the Twitter widget', 'evo' ),
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => "</aside>",
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		) );
+}
+add_action( 'widgets_init', 'evo_widgets_init' );
 ?>
