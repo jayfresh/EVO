@@ -236,11 +236,12 @@ ul.tags {
 
 a:link, a:visited {
 	color: #fe001a;
+	text-decoration: none;
 }
 
 a:hover {
 	color: #fe001a;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a.readMore {
