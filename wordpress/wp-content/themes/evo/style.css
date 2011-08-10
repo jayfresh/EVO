@@ -828,8 +828,11 @@ ul#homeLinks li:last-child a {
 
 .carousel {
 	position: relative;
-	float: left;
 	width: 615px;
+}
+
+.carouselWrapper .carousel {
+	float: left;
 }
 
 .carousel img {
