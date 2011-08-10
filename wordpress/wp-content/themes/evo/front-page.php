@@ -12,7 +12,7 @@ global $post;
 		<h2 class="fixed"><?php the_title(); ?></h2>
 		<p class="large"><?php echo get_the_excerpt(); ?></p>
 		<?php the_content(); ?>
-		<a class="readMore pull1" href="#">Read More</a>
+		<a class="readMore pull1" href="<?php the_permalink(); ?>">Read More</a>
 	</div>
 	<?php endwhile;
 		endif;
@@ -46,7 +46,7 @@ global $post;
 		<h2 class="fixed"><?php the_title(); ?></h2>
 		<p class="large"><?php echo get_the_excerpt(); ?></p>
 		<?php the_content(); ?>
-		<a class="readMore pull1" href="#">Read More</a>
+		<a class="readMore pull1" href="<?php the_permalink(); ?>">Read More</a>
 	</div>
 	<?php endwhile;
 		endif; ?>
