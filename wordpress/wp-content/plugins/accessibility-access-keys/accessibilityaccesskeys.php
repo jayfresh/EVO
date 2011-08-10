@@ -325,35 +325,36 @@ function footer_printer()
 {
 ?>
 	<?php //Built-in Function Access Keys ?>
+	<?php $url_stem = get_bloginfo('url'); ?>
 	<?php if(get_option('home_page_url') != "" && get_option('home_page_key') != ""){?>
-	<a href="<?php echo get_option('home_page_url'); ?>" accesskey="<?php echo get_option('home_page_key'); ?>"></a>
+	<a href="<?php echo $url_stem.get_option('home_page_url'); ?>" accesskey="<?php echo get_option('home_page_key'); ?>"></a>
 	<?php }if(get_option(search_page_url) != "" && get_option('search_page_key') != ""){?>
-	<a href="<?php echo get_option('search_page_url'); ?>" accesskey="<?php echo get_option('search_page_key'); ?>"></a>
+	<a href="<?php echo $url_stem.get_option('search_page_url'); ?>" accesskey="<?php echo get_option('search_page_key'); ?>"></a>
 	<?php }if(get_option('skip_to_content_key') != ""){?>
 	<a href="#content" accesskey="<?php echo get_option('skip_to_content_key'); ?>"></a>
 	<?php }if(get_option('top_of_page_key') != ""){?>
 	<a href="#TOP" accesskey="<?php echo get_option('top_of_page_key'); ?>"></a>
 	<?php //Custom Access Keys ?>
 	<?php }if(get_option('custom_key_1_url') != "" && get_option('custom_key_1') != ""){ ?>
-	<a href="<?php echo get_option('custom_key_1_url'); ?>" accesskey="<?php echo get_option('custom_key_1'); ?>"></a>
+	<a href="<?php echo $url_stem.get_option('custom_key_1_url'); ?>" accesskey="<?php echo get_option('custom_key_1'); ?>"></a>
 	<?php }if(get_option('custom_key_2_url') != "" && get_option('custom_key_2') != ""){ ?>	
-	<a href="<?php echo get_option('custom_key_2_url'); ?>" accesskey="<?php echo get_option('custom_key_2'); ?>"></a>
+	<a href="<?php echo $url_stem.get_option('custom_key_2_url'); ?>" accesskey="<?php echo get_option('custom_key_2'); ?>"></a>
 	<?php }if(get_option('custom_key_3_url') != "" && get_option('custom_key_3') != ""){ ?>
-	<a href="<?php echo get_option('custom_key_3_url'); ?>" accesskey="<?php echo get_option('custom_key_3'); ?>"></a>
+	<a href="<?php echo $url_stem.get_option('custom_key_3_url'); ?>" accesskey="<?php echo get_option('custom_key_3'); ?>"></a>
 	<?php }if(get_option('custom_key_4_url') != "" && get_option('custom_key_4') != ""){ ?>
-	<a href="<?php echo get_option('custom_key_4_url'); ?>" accesskey="<?php echo get_option('custom_key_4'); ?>"></a>
+	<a href="<?php echo $url_stem.get_option('custom_key_4_url'); ?>" accesskey="<?php echo get_option('custom_key_4'); ?>"></a>
 	<?php }if(get_option('custom_key_5_url') != "" && get_option('custom_key_5') != ""){ ?>
-	<a href="<?php echo get_option('custom_key_5_url'); ?>" accesskey="<?php echo get_option('custom_key_5'); ?>"></a>
+	<a href="<?php echo $url_stem.get_option('custom_key_5_url'); ?>" accesskey="<?php echo get_option('custom_key_5'); ?>"></a>
 	<?php }if(get_option('custom_key_6_url') != "" && get_option('custom_key_6') != ""){ ?>
-	<a href="<?php echo get_option('custom_key_6_url'); ?>" accesskey="<?php echo get_option('custom_key_6'); ?>"></a>
+	<a href="<?php echo $url_stem.get_option('custom_key_6_url'); ?>" accesskey="<?php echo get_option('custom_key_6'); ?>"></a>
 	<?php }if(get_option('custom_key_7_url') != "" && get_option('custom_key_7') != ""){ ?>
-	<a href="<?php echo get_option('custom_key_7_url'); ?>" accesskey="<?php echo get_option('custom_key_7'); ?>"></a>
+	<a href="<?php echo $url_stem.get_option('custom_key_7_url'); ?>" accesskey="<?php echo get_option('custom_key_7'); ?>"></a>
 	<?php }if(get_option('custom_key_8_url') != "" && get_option('custom_key_8') != ""){ ?>
-	<a href="<?php echo get_option('custom_key_8_url'); ?>" accesskey="<?php echo get_option('custom_key_8'); ?>"></a> 
+	<a href="<?php echo $url_stem.get_option('custom_key_8_url'); ?>" accesskey="<?php echo get_option('custom_key_8'); ?>"></a> 
 	<?php }if(get_option('custom_key_9_url') != "" && get_option('custom_key_9') != ""){ ?>
-	<a href="<?php echo get_option('custom_key_9_url'); ?>" accesskey="<?php echo get_option('custom_key_9'); ?>"></a>
+	<a href="<?php echo $url_stem.get_option('custom_key_9_url'); ?>" accesskey="<?php echo get_option('custom_key_9'); ?>"></a>
 	<?php }if(get_option('custom_key_10_url') != "" && get_option('custom_key_10') != ""){ ?>
-	<a href="<?php echo get_option('custom_key_10_url'); ?>" accesskey="<?php echo get_option('custom_key_10'); ?>"></a>  
+	<a href="<?php echo $url_stem.get_option('custom_key_10_url'); ?>" accesskey="<?php echo get_option('custom_key_10'); ?>"></a>  
 	<?php } ?>
 <?php   
 }//end function footer_printer()

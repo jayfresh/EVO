@@ -1,4 +1,3 @@
-
 <div class="article">
 	<?php $news_page = get_post(get_option('page_for_posts')); ?>
 	<h1><?php echo get_the_title($news_page); ?></h1>
@@ -21,4 +20,33 @@
 		<?php the_content(); ?>
 	</div>
 	<?php endwhile; endif; ?>
+	<hr class="grid13col" />
+	<?php
+		global $wp_query, $wp_rewrite;
+		$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+		
+		$pagination = array(
+			'base' => @add_query_arg('paged','%#%'),
+			'format' => '',
+			'prev_text' => '&lt;',
+			'next_text' => '&gt;',
+			'total' => $wp_query->max_num_pages,
+			'current' => $current,
+			'show_all' => true,
+			'type' => 'plain'
+		);
+
+		if( $wp_rewrite->using_permalinks() )
+			$pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged' );
+		
+		if( !empty($wp_query->query_vars['s']) )
+			$pagination['add_args'] = array( 's' => get_query_var( 's' ) );
+		
+		$pagination_html = paginate_links( $pagination );
+		if($pagination_html) {
+			echo $pagination_html;
+		} else { ?>
+			<a href="<?php bloginfo("url"); ?>/news">&lt; Back</a>
+		<?php }
+	?>
 </div>
