@@ -1,4 +1,7 @@
 <?php
+add_theme_support('post-thumbnails');
+add_image_size( 'carousel', 615, 324, true );
+
 // Register Main and Footer Menu
 if ( function_exists( 'register_nav_menu' ) ) {
 	register_nav_menu( 'search_box_menu', 'Search Box Menu' );
@@ -136,5 +139,139 @@ add_action('wp_footer', 'addThisScript');
 function AddThisScript() { ?>
 <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js"></script>
 <?php }
+
+// Add Q&A post type
+
+if ( ! function_exists( 'post_type_q_a' ) ) :
+
+function post_type_q_a() {
+
+	register_post_type( 
+		'q_a',
+		array( 
+			'label' => __('Q&A'),
+			'labels' => array(
+				'singular_name'=>'Q&A'
+			),
+			'description' => __('Create a Q&A'), 
+			'public' => true, 
+			'show_ui' => true,
+			'register_meta_box_cb' => 'init_metaboxes_q_a',
+			'supports' => array (
+				'title',
+				'thumbnail',
+				//'editor',
+				'page-attributes'
+			),
+			'hierarchical' => true
+		)
+	);
+
+}
+
+endif;
+
+add_action('init', 'post_type_q_a');
+
+function init_metaboxes_q_a() {
+	if ( function_exists( 'add_meta_box' ) ) {
+		add_meta_box( "Answer page", __( "Answer page" ), 'answer_box', 'q_a', 'normal', 'high' );
+	}
+}
+
+// this handles the nonces and HTML for the answer box
+function answer_box() {
+	global $post;
+	static $q_a_nonce_flag = false;
+	echo '<div style="width: 95%%; margin: 10px auto 10px auto; background-color: #F9F9F9; border: 1px solid #DFDFDF; -moz-border-radius: 5px; -webkit-border-radius: 5px; padding: 10px;">';
+	// Run once
+	if ( ! $q_a_nonce_flag ) {
+		echo_q_a_nonce();
+		$q_a_nonce_flag = true;
+	}
+	// Generate box contents
+	$url_stem = get_bloginfo('wpurl');
+	$val = get_post_meta($post->ID, '_q_a_link', true);
+	echo '<div style="overflow:hidden;  margin-top:10px;">'.
+		'<div style="float:left; padding-top:7px;"><label for="_q_a_link"><strong>'.$url_stem.'/</strong></label></div>'.
+		'<div style="width:500px; float:left;"><input style="width: 80%%;" type="text" name="_q_a_link" id="_q_a_link" value="'.$val.'" />'.
+		'<p style="clear:both"><em>Complete the URL for the page name</em></p></div>'.
+	'</div>';
+	echo '</div>';
+}
+
+function echo_q_a_nonce () {
+	// Use nonce for verification ... ONLY USE ONCE!
+	echo sprintf(
+		'<input type="hidden" name="%1$s" id="%1$s" value="%2$s" />',
+		'q_a_nonce_name',
+		wp_create_nonce( plugin_basename(__FILE__) )
+	);
+}
+
+/* When the post is saved, saves our custom data */
+if ( ! function_exists( 'q_a_save_postdata' ) ) :
+function q_a_save_postdata($post_id, $post) {
+	$post_type = $_POST['post_type'];
+	if($post_type!='q_a') {
+		return;
+	}
+	// verify this came from the our screen and with proper authorization,
+	// because save_post can be triggered at other times
+	if ( ! wp_verify_nonce( $_POST['q_a_nonce_name'], plugin_basename(__FILE__) ) ) {
+		return $post->ID;
+	}
+	// Is the user allowed to edit the post or page?
+	if ( 'page' == $post_type ) {
+		if ( ! current_user_can( 'edit_page', $post->ID ))
+			return $post->ID;
+		} else {
+		if ( ! current_user_can( 'edit_post', $post->ID ))
+			return $post->ID;
+		}
+		// OK, we're authenticated: we need to find and save the data
+		// We'll put it into an array to make it easier to loop though.
+		// The data is already in $sp_boxes, but we need to flatten it out.
+		$key = '_q_a_link';
+		$to_save = $_POST[$key];
+		// if $value is an array, make it a CSV (unlikely)
+		$value = implode(',', (array)$to_save);
+		if ( get_post_meta($post->ID, $key, FALSE) ) {
+			// Custom field has a value.
+			update_post_meta($post->ID, $key, $value);
+		} else {
+			// Custom field does not have a value.
+			add_post_meta($post->ID, $key, $value);
+		if (!$value) {
+			// delete blanks
+			delete_post_meta($post->ID, $key);
+		}
+	}
+}
+endif;
+
+if ( ! function_exists( 'echo_q_a_nonce' ) ) :
+function echo_q_a_nonce () {
+	// Use nonce for verification ... ONLY USE ONCE!
+	echo sprintf(
+		'<input type="hidden" name="%1$s" id="%1$s" value="%2$s" />',
+		'q_a_nonce_name',
+		wp_create_nonce( plugin_basename(__FILE__) )
+	);
+}
+endif;
+
+// Use the save_post action to do something with the data entered
+// Save the custom fields
+add_action( 'save_post', 'q_a_save_postdata', 1, 2 );
+
+// A simple function to get data stored in a custom field
+if ( !function_exists('get_custom_field') ) {
+	function get_custom_field($field) {
+		global $post;
+		$custom_field = get_post_meta($post->ID, $field, true);
+		echo $custom_field;
+	}
+}
 
 ?>

@@ -15,13 +15,27 @@ global $post;
 		<a class="readMore pull1" href="#">Read More</a>
 	</div>
 	<?php endwhile;
-		endif; ?>
-	<div class="grid16col carousel">
-		<img src="<?php bloginfo('stylesheet_directory');?>/images/carousel.jpg"/>
-		<p>What are the uncertainties surrounding predictions of change in global soil carbon stocks in response to climate change?</p>
-		<a href="#" class="answer"><span></span> Answer</a>
-		<span class="prev">prev</span>
-		<span class="next">next</span>
+		endif;
+	$q_a_query = new WP_Query("post_type=q_a&posts_per_page=-1&orderby=menu_order&order=asc"); ?>
+	<div class="carouselWrapper grid16col">
+		<div class="strip">
+			<?php if($q_a_query->have_posts()) :
+				while($q_a_query->have_posts()) : $q_a_query->the_post(); ?>
+			<div class="grid16col carousel">
+				<?php the_post_thumbnail('carousel'); ?>
+				<p><?php the_title(); ?></p>
+				<a href="<?php echo get_post_meta($post->ID,'_q_a_link', true); ?>" class="answer"><span></span> Answer</a>
+				<span class="prev">prev</span>
+				<span class="next">next</span>
+			</div>
+			<?php endwhile;
+			else : ?>
+			<div class="grid16col carousel">
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/images/carousel.jpg" />
+				<p>No Q&amp;A found</p>
+			</div>			
+			<?php endif; ?>
+		</div>
 	</div>
 </div>
 <div class="grid24col innerWrap push4">

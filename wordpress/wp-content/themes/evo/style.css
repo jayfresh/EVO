@@ -816,8 +816,19 @@ ul#homeLinks li:last-child a {
 	border-right: none;
 }
 
+.carouselWrapper {
+	height: 324px;
+	width: 615px;
+	overflow: hidden;
+}
+
+.carouselWrapper .strip {
+	position: relative;
+}
+
 .carousel {
 	position: relative;
+	float: left;
 	width: 615px;
 }
 
