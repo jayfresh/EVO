@@ -150,11 +150,11 @@ function post_type_q_a() {
 	register_post_type( 
 		'q_a',
 		array( 
-			'label' => __('Q&A'),
+			'label' => __('Q A'),
 			'labels' => array(
-				'singular_name'=>'Q&A'
+				'singular_name'=>'Q A'
 			),
-			'description' => __('Create a Q&A'), 
+			'description' => __('Create a Q A'), 
 			'public' => true, 
 			'show_ui' => true,
 			'register_meta_box_cb' => 'init_metaboxes_q_a',
