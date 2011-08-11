@@ -28,6 +28,9 @@ $(document).ready(function() {
 				}
 			});
 	});
+	
+	// cover for any browsers that don't support placeholder
+	$('input').placeholder();
 });
 
 function moveStrip(direction) {
