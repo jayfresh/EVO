@@ -287,4 +287,12 @@ function evo_widgets_init() {
 		) );
 }
 add_action( 'widgets_init', 'evo_widgets_init' );
+
+add_shortcode('sub-topic', 'sub_topic_shortcode');
+
+function sub_topic_shortcode($attr, $content = null) {
+	$link = $attr ? $attr[0] : "#";
+	return '<a class="block" href="'.$link.'">'.$content.'</a>';
+}
+
 ?>
