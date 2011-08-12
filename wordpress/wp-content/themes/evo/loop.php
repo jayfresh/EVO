@@ -22,6 +22,7 @@
 		<?php endif; ?>
 		<p class="large"><?php echo get_the_excerpt(); ?></p>
 		<?php the_content(); ?>
+		<br class="clearboth" />
 	</div>
 </div>
 <?php endwhile; endif; ?>

@@ -751,20 +751,36 @@ a.block:hover {
 }
 
 .bigblock {
-	width: 400px;
-	height: 400px;
+	width: 336px;
+	height: 336px;
+	margin-right: 10px;
 	position: relative;
+	overflow: hidden;
+	float: left;
 }
-.bigblock:nth-of-type(1) {
-	/*background-position: */
+.bigblock .container {
+	position: relative;
+	padding: 6px;
 }
 .bigblock img {
 	position: absolute;
 }
-.bigblock .container {
-	position: relative;
+.bigblock:nth-of-type(1) img {
+	left: 0;
+	top: 0;
 }
-
+.bigblock:nth-of-type(2) img {
+	left: -346px;
+	top: 0;
+}
+.bigblock:nth-of-type(3) img {
+	left: 0;
+	top: -336px;
+}
+.bigblock:nth-of-type(4) img {
+	left: -346px;
+	top: -336px;
+}
 
 /*
 ------------------------------------------------------------------------------ Home Page

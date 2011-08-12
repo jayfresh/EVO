@@ -296,18 +296,25 @@ function sub_topic_shortcode($attr, $content = null) {
 }
 
 add_shortcode('start-topic', 'start_topic_shortcode');
-
+$topic_shortcode_count = 0;
 function start_topic_shortcode($attr) {
 	global $post;
+	global $topic_shortcode_count;
 	$link = $attr ? $attr[0] : "#";
 	$img = get_the_post_thumbnail( $post->ID );
-	return '<div class="bigblock">'.$img.'<div class="container">';
+	$topic_shortcode_count++;
+	$html = $topic_shortcode_count==1 ? '<div class="grid18col">' : '';
+	$html .= '<div class="bigblock">'.$img.'<div class="container">';
+	return $html;
 }
 
 add_shortcode('end-topic', 'end_topic_shortcode');
 
 function end_topic_shortcode($attr) {
-	return '</div></div>';
+	global $topic_shortcode_count;
+	$html = $topic_shortcode_count==4 ? "</div>" : "";
+	$html .="</div></div>";
+	return $html;
 }
 
 ?>
