@@ -11,7 +11,7 @@
 	<div class="grid13col newsArticle">
 		<p class="push3 date"><?php echo get_the_date('d.m.y'); ?></p>
 		<?php if(!is_singular()) : ?>
-		<h2 class="small"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+		<h2 class="pull2"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		<?php else : ?>
 		<h2><?php the_title(); ?></h2>
 		<?php endif; ?>
