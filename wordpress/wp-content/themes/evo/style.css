@@ -1083,6 +1083,7 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 
 .newsArticle h2 {
 	font-size: 18px;
+	line-height: 24px;
 }
 
 .date {
