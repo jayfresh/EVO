@@ -8,8 +8,7 @@
 		<a id="email" href="#">Share by email</a>
 		<a id="print" href="#">Print this page</a>
 	</div>
-	<div class="grid13col">
-		<hr />
+	<div class="grid13col newsArticle">
 		<p class="push2 date"><?php echo get_the_date('d.m.y'); ?></p>
 		<?php if(!is_singular()) : ?>
 		<h2 class="small"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
