@@ -1069,6 +1069,18 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 .addthis_toolbox .custom_images a {
 	padding: 0;
 }
+
+/*
+------------------------------------------------------------------------------ News Articles
+*/
+
+.newsArticle {
+	background-image: url(images/dots-singlerow.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border-width: 1px 0px;
+}
+
 /*
 ------------------------------------------------------------------------------ Browser fixes & workarounds
 */

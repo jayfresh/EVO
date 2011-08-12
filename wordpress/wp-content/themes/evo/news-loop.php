@@ -10,7 +10,7 @@
 	</div>
 	<div class="grid13col">
 		<hr />
-		<p><?php echo get_the_date('d.m.y'); ?></p>
+		<p class="push2 date"><?php echo get_the_date('d.m.y'); ?></p>
 		<?php if(!is_singular()) : ?>
 		<h2 class="small"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		<?php else : ?>
@@ -20,7 +20,7 @@
 		<?php the_content(); ?>
 	</div>
 	<?php endwhile; endif; ?>
-	<hr class="grid13col" />
+	
 	<?php
 		global $wp_query, $wp_rewrite;
 		$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
