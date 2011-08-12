@@ -1081,6 +1081,10 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	border-width: 1px 0px;
 }
 
+.newsArticle h2 {
+	font-size: 18px;
+}
+
 .date {
 	font-family: 'CalvertMTStdLight';
 	font-size: 14px;
