@@ -15,7 +15,7 @@
 		<?php else : ?>
 		<h2><?php the_title(); ?></h2>
 		<?php endif; ?>
-		<p class="large"><?php echo get_the_excerpt(); ?></p>
+		<p class="large"><?php //echo get_the_excerpt(); ?></p>
 		<?php the_content(); ?>
 	</div>
 	<?php endwhile; endif; ?>
