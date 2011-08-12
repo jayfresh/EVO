@@ -750,7 +750,20 @@ a.block:hover {
 	background-color: #e4ed76;
 }
 
-
+.bigblock {
+	width: 400px;
+	height: 400px;
+	position: relative;
+}
+.bigblock:nth-of-type(1) {
+	/*background-position: */
+}
+.bigblock img {
+	position: absolute;
+}
+.bigblock .container {
+	position: relative;
+}
 
 
 /*
@@ -1048,5 +1061,4 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	border-top: #fff solid 9px;
 	border-bottom: #fff solid 9px;
 }
-
 

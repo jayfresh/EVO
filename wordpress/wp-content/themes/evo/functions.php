@@ -295,4 +295,19 @@ function sub_topic_shortcode($attr, $content = null) {
 	return '<a class="block" href="'.$link.'">'.$content.'</a>';
 }
 
+add_shortcode('start-topic', 'start_topic_shortcode');
+
+function start_topic_shortcode($attr) {
+	global $post;
+	$link = $attr ? $attr[0] : "#";
+	$img = get_the_post_thumbnail( $post->ID );
+	return '<div class="bigblock">'.$img.'<div class="container">';
+}
+
+add_shortcode('end-topic', 'end_topic_shortcode');
+
+function end_topic_shortcode($attr) {
+	return '</div></div>';
+}
+
 ?>

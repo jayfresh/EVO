@@ -4,8 +4,15 @@
 		<?php addThis(); ?>
 	</div>
 	<div class="grid13col">
-		<?php if(is_singular()) : ?>
+		<?php if(is_singular()) :
+			global $post;
+			$parent = get_post($post->post_parent);
+			if($parent->ID!=$post->ID && $parent->post_name=="information-for") { ?>
+		<h1><span class="subhead">Information for </span><?php the_title(); ?></h1>
+			<?php } else {
+		?>
 		<h1><?php the_title(); ?></h1>
+			<?php } ?>
 		<?php else : ?>
 		<h2><?php the_title(); ?></h2>
 		<?php endif; ?>
