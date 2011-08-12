@@ -45,7 +45,9 @@
 		if($pagination_html) {
 			echo $pagination_html;
 		} else { ?>
-			<a href="<?php bloginfo("url"); ?>/news">&lt; Back</a>
+			<div class="pagination">
+				<a href="<?php bloginfo("url"); ?>/news">&lt; Back</a>
+			</div>
 		<?php }
 	?>
 </div>

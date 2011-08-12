@@ -1092,6 +1092,13 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	font-size: 14px;
 }
 
+.pagination {
+	background-image: url(images/dots-singlerow.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border-width: 1px 0px;
+}
+
 
 /*
 ------------------------------------------------------------------------------ Browser fixes & workarounds
