@@ -1079,7 +1079,7 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	background-repeat: repeat-x;
 	background-position: left top;
 	border-width: 1px 0px;
-	padding-bottom:  30px;
+	padding-bottom:  29px;
 }
 
 .newsArticle h2 {
@@ -1097,6 +1097,8 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	background-repeat: repeat-x;
 	background-position: left top;
 	border-width: 1px 0px;
+	padding-top: 23px;
+	
 }
 
 
