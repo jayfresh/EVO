@@ -1081,6 +1081,12 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	border-width: 1px 0px;
 }
 
+.date {
+	font-family: 'CalvertMTStdLight';
+	font-size: 14px;
+}
+
+
 /*
 ------------------------------------------------------------------------------ Browser fixes & workarounds
 */
