@@ -985,6 +985,11 @@ ul.category li.grid12col {
 
 #twitterWidget ul.tweets li {
 	list-style: none;
+	background-image: url(images/dots-singlerow.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding: 18px 0px;
+	
 }
 
 #wrap div.tb_tweet {
