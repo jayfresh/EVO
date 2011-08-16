@@ -1,6 +1,16 @@
 <div class="article">
-	<?php $news_page = get_post(get_option('page_for_posts')); ?>
-	<h1><?php echo get_the_title($news_page); ?></h1>
+	<?php if(is_home()) {
+		$this_page = get_post(get_option('page_for_posts'));
+	} else if(is_search()) {
+		$this_page = get_post_by_slug( 'search', 'page' );
+	} ?>
+	<h1><?php echo get_the_title($this_page); ?></h1>
+	<?php if(is_search()) { ?>
+	<form action="<?php bloginfo('url'); ?>" method="get">
+		<input id="inline_s" type="search" name="s" value="<?php echo $_REQUEST['s']; ?>"/>
+	</form>
+	<p>Searched for: <?php echo $_REQUEST['s']; ?></p>
+	<?php } ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="grid3col sharing right">
 		<a id="facebook" href="#">Share on Facebook</a>
@@ -44,7 +54,7 @@
 		$pagination_html = paginate_links( $pagination );
 		if($pagination_html) {
 			echo $pagination_html;
-		} else { ?>
+		} elseif(!is_search()) { ?>
 			<div class="pagination">
 				<a href="<?php bloginfo("url"); ?>/news">&lt; Back</a>
 			</div>
