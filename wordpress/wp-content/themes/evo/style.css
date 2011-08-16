@@ -976,7 +976,7 @@ ul.category li.grid12col {
 
 
 #twitterWidget a {
-	color: #636466;
+	color: #272727;
 }
 
 #twitterWidget h3 a {
@@ -1000,6 +1000,7 @@ ul.category li.grid12col {
 	display: block;
 	padding: 12px 0px 0px 0px;
 	font-size: 10px;
+	color: #636466;
 }
 
 #wrap div.tb_tweet {
