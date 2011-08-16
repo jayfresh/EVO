@@ -974,6 +974,11 @@ ul.category li.grid12col {
 ------------------------------------------------------------------------------ Twitter Widget Overrides 
 */
 
+#twitterWidget h3 a {
+	color: #636466;
+	font-size: 15px;
+}
+
 #wrap div.tb_tweet {
 	border: none;
 	padding: 0px;
