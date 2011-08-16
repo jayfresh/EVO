@@ -14,14 +14,20 @@
 		<h1><?php the_title(); ?></h1>
 			<?php } ?>
 		<?php else : ?>
+			<?php if(is_search()) { ?>
+		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+			<?php } else { ?>
 		<h2><?php the_title(); ?></h2>
+			<?php } ?>
 		<?php endif; ?>
 		<?php if(get_post_type()=='post') : ?>
 		<hr />
 		<?php the_date('d.m.y'); ?>
 		<?php endif; ?>
 		<p class="large"><?php echo get_the_excerpt(); ?></p>
-		<?php the_content(); ?>
+		<?php if(!is_search()) { 
+			the_content(); ?>
+		<?php } ?>
 		<br class="clearboth" />
 	</div>
 </div>

@@ -40,6 +40,19 @@ function sitemap_shortcode($atts) {
 <?php }
 add_shortcode('sitemap', 'sitemap_shortcode');
 
+// add_scripts
+
+function add_Scaffolding_scripts() {
+	$template_url = get_bloginfo( 'stylesheet_directory' );
+	wp_deregister_script( 'jquery' );
+	wp_enqueue_script('jquery',$template_url.'/js/jquery-1.6.1.js','','',true);
+	wp_enqueue_script('ie6multipleclass',$template_url.'/js/jquery.ie6MultipleClass.min.js','','',true);
+	wp_enqueue_script('easing',$template_url.'/js/jquery.easing.1.3.js','','',true);
+	wp_enqueue_script('togglegrid',$template_url.'/js/togglegrid.js','','',true);
+}    
+ 
+add_action('init', 'add_Scaffolding_scripts');
+
 // Utility functions
 function get_post_by_slug( $slug, $post_type='post' ) {
     global $post;
