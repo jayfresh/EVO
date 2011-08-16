@@ -974,6 +974,11 @@ ul.category li.grid12col {
 ------------------------------------------------------------------------------ Twitter Widget Overrides 
 */
 
+
+#twitterWidget a {
+	color: #636466;
+}
+
 #twitterWidget h3 a {
 	color: #636466;
 	font-size: 15px;
@@ -988,8 +993,13 @@ ul.category li.grid12col {
 	background-image: url(images/dots-singlerow.png);
 	background-repeat: repeat-x;
 	background-position: left top;
-	padding: 18px 0px;
-	
+	padding: 18px 0px;	
+}
+
+#twitterWidget a.timesince {
+	display: block;
+	padding: 12px 0px;
+	font-size: 12px;
 }
 
 #wrap div.tb_tweet {
