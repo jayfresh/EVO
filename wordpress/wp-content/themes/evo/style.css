@@ -526,7 +526,7 @@ ul.sidebar li:first-child {
 	font-size: 17px;
 }
 
-ul.sidebar li a {
+ul.sidebar li a, #newsArchive {
 	background-color: white;
 	height: 42px;
 	padding: 10px 28px 8px 14px;
@@ -542,7 +542,10 @@ ul.sidebar li a {
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
-	
+}
+
+#newsArchive {
+	background-image: url(images/newsArchiveArrow.png);
 }
 
 ul.sidebar li.active a {
