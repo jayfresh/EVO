@@ -445,6 +445,11 @@ li#menu-count-0 ul li {
 	background-position: 110px 5px;
 }
 
+li#menu-count-0 ul li:hover {
+	background-position: 110px 40px;
+}
+
+
 li#menu-count-0 ul li ul li { 
 	background-image: none;
 }
