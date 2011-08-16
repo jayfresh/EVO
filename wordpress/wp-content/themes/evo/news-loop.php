@@ -8,19 +8,18 @@
 		<a id="email" href="#">Share by email</a>
 		<a id="print" href="#">Print this page</a>
 	</div>
-	<div class="grid13col">
-		<hr />
-		<?php the_date('d.m.y'); ?>
+	<div class="grid13col newsArticle">
+		<p class="push3 date"><?php echo get_the_date('d.m.y'); ?></p>
 		<?php if(!is_singular()) : ?>
-		<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+		<h2 class="pull2"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		<?php else : ?>
 		<h2><?php the_title(); ?></h2>
 		<?php endif; ?>
-		<p class="large"><?php echo get_the_excerpt(); ?></p>
+		<!--<p class="large"><?php //echo get_the_excerpt(); ?></p>-->
 		<?php the_content(); ?>
 	</div>
 	<?php endwhile; endif; ?>
-	<hr class="grid13col" />
+	
 	<?php
 		global $wp_query, $wp_rewrite;
 		$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
@@ -46,7 +45,9 @@
 		if($pagination_html) {
 			echo $pagination_html;
 		} else { ?>
-			<a href="<?php bloginfo("url"); ?>/news">&lt; Back</a>
+			<div class="pagination">
+				<a href="<?php bloginfo("url"); ?>/news">&lt; Back</a>
+			</div>
 		<?php }
 	?>
 </div>

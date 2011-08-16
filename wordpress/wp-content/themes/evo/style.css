@@ -417,7 +417,7 @@ ul.nav ul { /* a bit of styling to make this look nicer for non-JS */
 .js ul.nav ul {
 	display: none;
 	margin-left: 0;
-	background-color: #FFF;
+	background-color: #eeeee7;
 	position: relative;
 	left: -10px;
 	padding: 10px 10px 5px 10px;
@@ -444,6 +444,11 @@ li#menu-count-0 ul li {
 	background-repeat: no-repeat;
 	background-position: 110px 5px;
 }
+
+li#menu-count-0 ul li:hover {
+	background-position: 110px -38px;
+}
+
 
 li#menu-count-0 ul li ul li { 
 	background-image: none;
@@ -1069,6 +1074,39 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 .addthis_toolbox .custom_images a {
 	padding: 0;
 }
+
+/*
+------------------------------------------------------------------------------ News Articles
+*/
+
+.newsArticle {
+	background-image: url(images/dots-singlerow.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border-width: 1px 0px;
+	padding-bottom:  29px;
+}
+
+.newsArticle h2 {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.date {
+	font-family: 'CalvertMTStdLight';
+	font-size: 14px;
+}
+
+.pagination {
+	background-image: url(images/dots-singlerow.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	border-width: 1px 0px;
+	padding-top: 23px;
+	
+}
+
+
 /*
 ------------------------------------------------------------------------------ Browser fixes & workarounds
 */
