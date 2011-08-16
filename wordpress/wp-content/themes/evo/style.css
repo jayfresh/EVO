@@ -998,8 +998,8 @@ ul.category li.grid12col {
 
 #twitterWidget a.timesince {
 	display: block;
-	padding: 12px 0px;
-	font-size: 12px;
+	padding: 12px 0px 0px 0px;
+	font-size: 10px;
 }
 
 #wrap div.tb_tweet {
