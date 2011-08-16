@@ -546,6 +546,8 @@ ul.sidebar li a, #newsArchive {
 
 #newsArchive {
 	background-image: url(images/newsArchiveArrow.png);
+	background-position: 180px 15px;
+	font-size: 17px;
 }
 
 ul.sidebar li.active a {
