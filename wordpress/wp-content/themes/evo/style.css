@@ -526,7 +526,7 @@ ul.sidebar li:first-child {
 	font-size: 17px;
 }
 
-ul.sidebar li a {
+ul.sidebar li a, #newsArchive {
 	background-color: white;
 	height: 42px;
 	padding: 10px 28px 8px 14px;
@@ -542,7 +542,12 @@ ul.sidebar li a {
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
-	
+}
+
+#newsArchive {
+	background-image: url(images/newsArchiveArrow.png);
+	background-position: 180px 15px;
+	font-size: 17px;
 }
 
 ul.sidebar li.active a {
@@ -968,6 +973,24 @@ ul.category li.grid12col {
 /*
 ------------------------------------------------------------------------------ Twitter Widget Overrides 
 */
+
+#twitterWidget h3 a {
+	color: #636466;
+	font-size: 15px;
+}
+
+#twitterWidget ul.tweets {
+	margin: 0px 0px;
+}
+
+#twitterWidget ul.tweets li {
+	list-style: none;
+	background-image: url(images/dots-singlerow.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding: 18px 0px;
+	
+}
 
 #wrap div.tb_tweet {
 	border: none;
