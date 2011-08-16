@@ -1,6 +1,23 @@
 <div class="article">
-	<?php $news_page = get_post(get_option('page_for_posts')); ?>
-	<h1><?php echo get_the_title($news_page); ?></h1>
+	<?php
+	global $wp_query;
+	if(is_home()) {
+		$this_page = get_post(get_option('page_for_posts'));
+	} else if(is_search()) {
+		$this_page = get_post_by_slug( 'search', 'page' );
+	} ?>
+	<h1><?php echo get_the_title($this_page); ?></h1>
+	<?php if(is_search()) { ?>
+	<form action="<?php bloginfo('url'); ?>" method="get">
+		<input id="inline_s" type="search" name="s" value="<?php echo $_REQUEST['s']; ?>"/>
+	</form>
+	<p>Searched for: <?php echo $_REQUEST['s']; ?></p>
+	<?php $start_count = 1;
+	if($wp_query->is_paged) {
+		$start_count += $wp_query->post_count * ($wp_query->query['paged']-1);
+	} ?>
+	<p>Results <?php echo $start_count; ?> to <?php echo $start_count+$wp_query->post_count; ?> of <?php echo $wp_query->found_posts; ?></p>
+	<?php } ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="grid3col sharing right">
 		<a id="facebook" href="#">Share on Facebook</a>
@@ -21,7 +38,7 @@
 	<?php endwhile; endif; ?>
 	
 	<?php
-		global $wp_query, $wp_rewrite;
+		global $wp_rewrite;
 		$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
 		
 		$pagination = array(
@@ -44,7 +61,7 @@
 		$pagination_html = paginate_links( $pagination );
 		if($pagination_html) {
 			echo $pagination_html;
-		} else { ?>
+		} elseif(!is_search()) { ?>
 			<div class="pagination">
 				<a href="<?php bloginfo("url"); ?>/news">&lt; Back</a>
 			</div>

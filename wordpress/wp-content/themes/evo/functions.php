@@ -317,4 +317,21 @@ function end_topic_shortcode($attr) {
 	return $html;
 }
 
+// Utilities
+
+function get_post_by_slug( $slug, $post_type ) {
+    global $post;
+    $query = new WP_Query(
+        array(
+            'name' => $slug,
+            'post_type' => $post_type
+        )
+    );
+    while ( $query->have_posts() ) : $query->the_post();
+		$the_post = $post;
+	endwhile;
+	wp_reset_query();
+	return $the_post;
+}
+
 ?>
