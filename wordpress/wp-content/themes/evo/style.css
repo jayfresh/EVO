@@ -979,6 +979,14 @@ ul.category li.grid12col {
 	font-size: 15px;
 }
 
+#twitterWidget ul.tweets {
+	margin: 0px 0px;
+}
+
+#twitterWidget ul.tweets li {
+	list-style: none;
+}
+
 #wrap div.tb_tweet {
 	border: none;
 	padding: 0px;
