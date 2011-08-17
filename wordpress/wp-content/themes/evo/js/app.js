@@ -48,3 +48,5 @@ function moveStrip(direction) {
 		'left': toPos*blockWidth
 	}, 'slow');
 }
+
+var hlst_areas = ["div.article"];

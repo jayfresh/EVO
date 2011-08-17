@@ -475,6 +475,10 @@ li#menu-count-0:hover {
 	margin-bottom: 24px;
 }
 
+.hilite {
+	background-color: #FFFE67;
+}
+
 ::-webkit-input-placeholder {
     color: #EEEEE7;
 }
