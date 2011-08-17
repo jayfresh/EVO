@@ -21,8 +21,12 @@ if(is_home()) {
 array_unshift($parent_pages,$front_page) ?>
 <div class="grid18col right">
 	<ul class="breadcrumb">
-	<?php foreach($parent_pages as $post) : ?>
-	<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-	<?php endforeach; ?>
+	<?php if(is_404()) { ?>
+	<li>404</li>
+	<?php } else {
+		foreach($parent_pages as $post) : ?>
+		<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+		<?php endforeach;
+	} ?>
 	</ul>
 </div>
