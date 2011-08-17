@@ -996,8 +996,7 @@ ul.category li.grid12col {
 	padding: 18px 0px;	
 }
 
-#twitterWidget a.timesince {
-	display: block;
+#twitterWidget p {
 	padding: 12px 0px 0px 0px;
 	font-size: 10px;
 	color: #636466;

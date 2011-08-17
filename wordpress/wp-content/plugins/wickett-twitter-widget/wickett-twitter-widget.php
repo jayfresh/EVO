@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Wickett Twitter Widget
+Plugin Name: Wickett Twitter Widget (modified to include intents)
 Plugin URI: http://wordpress.org/extend/plugins/wickett-twitter-widget/
 Description: Display the <a href="http://twitter.com/">Twitter</a> latest updates from a Twitter user inside your theme's widgets. Customize the number of displayed Tweets, filter out replies, and include retweets.
 Version: 1.0.5
-Author: Automattic Inc.
+Author: Automattic Inc. / Jonathan Lister (customisations marked with 'JRL')
 Author URI: http://automattic.com/wordpress-plugins/
 License: GPLv2
 */
@@ -149,6 +149,7 @@ class Wickett_Twitter_Widget extends WP_Widget {
 			if ( isset( $instance['beforetweet'] ) && !empty( $instance['beforetweet'] ) )
 				$before_tweet = stripslashes(wp_filter_post_kses($instance['beforetweet']));
 
+			echo '<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>'; // JRL: added to enable Twitter intents
 			echo '<ul class="tweets">' . "\n";
 
 			$tweets_out = 0;
@@ -172,7 +173,8 @@ class Wickett_Twitter_Widget extends WP_Widget {
 					$tweet_id = urlencode($tweet['id_str']);
 				else
 					$tweet_id = urlencode($tweet['id']);
-				echo "<li>{$before_tweet}{$text}{$before_timesince}<a href=\"" . esc_url( "http://twitter.com/{$account}/statuses/{$tweet_id}" ) . '" class="timesince">' . str_replace(' ', '&nbsp;', wpcom_time_since(strtotime($tweet['created_at']))) . "&nbsp;ago</a></li>\n";
+				// JRL: modified following to include Twitter intents
+				echo "<li>{$before_tweet}{$text}{$before_timesince}<p><a href=\"" . esc_url( "http://twitter.com/{$account}/statuses/{$tweet_id}" ) . '" class="timesince">' . str_replace(' ', '&nbsp;', wpcom_time_since(strtotime($tweet['created_at']))) . "&nbsp;ago</a> <a href=\"https://twitter.com/intent/tweet?in_reply_to=$tweet_id\">reply</a> <a href=\"https://twitter.com/intent/retweet?tweet_id=$tweet_id\">retweet</a> <a href=\"https://twitter.com/intent/favorite?tweet_id=$tweet_id\">favorite</a></p></li>\n";
 				unset($tweet_id);
 				$tweets_out++;
 			}
