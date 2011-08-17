@@ -124,8 +124,8 @@ add_action('wp_loaded', 'add_scripts'); // wp_loaded chosen as it is after init,
 
 /* addThis widget */
 
-function addThis() { ?>
-<div class="addthis_toolbox addthis_default_style">
+function addThis($link) { ?>
+<div class="addthis_toolbox addthis_default_style"<?php if (isset($link)) { echo ' addthis:url="'.$link.'"'; } ?>>
    <div class="custom_images">
       <a class="addthis_button_facebook"></a>
       <a class="addthis_button_twitter"></a>

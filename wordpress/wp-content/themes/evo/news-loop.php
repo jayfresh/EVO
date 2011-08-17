@@ -20,10 +20,7 @@
 	<?php } ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="grid3col sharing right">
-		<a id="facebook" href="#">Share on Facebook</a>
-		<a id="twitter" href="#">Share on Twitter</a>
-		<a id="email" href="#">Share by email</a>
-		<a id="print" href="#">Print this page</a>
+		<?php addThis(get_permalink()); ?>
 	</div>
 	<div class="grid13col newsArticle">
 		<p class="push3 date"><?php echo get_the_date('d.m.y'); ?></p>

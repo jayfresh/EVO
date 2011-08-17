@@ -43,7 +43,7 @@ add_shortcode('sitemap', 'sitemap_shortcode');
 // add_scripts
 
 function add_Scaffolding_scripts() {
-	$template_url = get_bloginfo( 'stylesheet_directory' );
+	$template_url = get_bloginfo( 'template_directory' );
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script('jquery',$template_url.'/js/jquery-1.6.1.js','','',true);
 	wp_enqueue_script('ie6multipleclass',$template_url.'/js/jquery.ie6MultipleClass.min.js','','',true);
