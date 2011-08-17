@@ -31,6 +31,12 @@ $(document).ready(function() {
 	
 	// cover for any browsers that don't support placeholder
 	$('input').placeholder();
+	
+	// make OL LI's wrapped in SPAN elements so we can give the numbers red color
+	$('ol').each(function() {
+		$(this).addClass('spanified')
+			.children('li').wrapInner('<span>');
+	});
 });
 
 function moveStrip(direction) {

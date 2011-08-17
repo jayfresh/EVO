@@ -344,6 +344,13 @@ ul.noBullets li {
 	list-style: none;
 }
 
+ol.spanified {
+	color: #FE001A;
+}
+ol.spanified li span {
+	color: #636466;
+}
+
 /*
 ------------------------------------------------------------------------------ Boxes
 */
