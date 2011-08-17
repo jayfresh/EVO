@@ -20,7 +20,7 @@
 	<?php } ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="grid3col sharing right">
-		<?php addThis(get_permalink()); ?>
+		<?php addThis(get_permalink(),get_the_title()); ?>
 	</div>
 	<div class="grid13col newsArticle">
 		<p class="push3 date"><?php echo get_the_date('d.m.y'); ?></p>
