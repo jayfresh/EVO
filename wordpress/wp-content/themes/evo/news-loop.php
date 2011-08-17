@@ -8,9 +8,7 @@
 	} ?>
 	<h1><?php echo get_the_title($this_page); ?></h1>
 	<?php if(is_search()) { ?>
-	<form action="<?php bloginfo('url'); ?>" method="get">
-		<input id="inline_s" type="search" name="s" value="<?php echo $_REQUEST['s']; ?>"/>
-	</form>
+	<?php get_search_form(); ?>
 	<p>Searched for: <?php echo $_REQUEST['s']; ?></p>
 	<?php $start_count = 1;
 	if($wp_query->is_paged) {
