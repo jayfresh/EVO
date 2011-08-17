@@ -164,7 +164,8 @@ function post_type_q_a() {
 				//'editor',
 				'page-attributes'
 			),
-			'hierarchical' => true
+			'hierarchical' => true,
+			'exclude_from_search' => true
 		)
 	);
 
