@@ -10,7 +10,7 @@ if($page_target->post_parent) {
 	}
 }
 $page_title = get_the_title();
-$query = new WP_query("post_type=page&post_parent=".$page_target->ID."&orderby=menu_order&order=asc");
+$query = new WP_query("post_type=page&post_parent=".$page_target->ID."&posts_per_page=-1&orderby=menu_order&order=asc");
 if($query->have_posts()) : ?>
 	<div class="sidebarWrap grid6col dottop padtop">
 		<ul class="sidebar push4">
