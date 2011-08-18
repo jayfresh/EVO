@@ -786,8 +786,8 @@ a.block:hover {
 	margin-bottom: 12px;
 }
 
-.bigblock p {
-	
+.bigblock h1, .bigblock h2, .bigblock h3, .bigblock h4, .bigblock h5, .bigblock h6 {
+	font-family: 'CalvertMTStdLight';
 }
 
 
