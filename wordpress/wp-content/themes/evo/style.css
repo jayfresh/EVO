@@ -802,6 +802,7 @@ a.block:hover {
 }
 
 .bigblock a:before {
+	content: '';
 	border: 10px solid white;
 	border-width: 7px 0px 7px 7px;
 	border-color: transparent transparent transparent white;
