@@ -783,6 +783,7 @@ a.block:hover {
 	position: relative;
 	overflow: hidden;
 	float: left;
+	margin-bottom: 12px;
 }
 
 .bigblock p {
