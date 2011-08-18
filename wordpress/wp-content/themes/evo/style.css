@@ -1169,8 +1169,8 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	padding-top: 23px;	
 }
 
-a.page-numbers {
-	margin-right: 10px;
+.page-numbers {
+	margin-right: 5px;
 }
 
 /*
