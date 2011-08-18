@@ -1019,7 +1019,11 @@ ul.category li.grid12col {
 }
 
 #twitterWidget p a {
-	margin-right: 5px;
+	margin-right: 10px;
+}
+
+#twitterWidget p a:last-child {
+	margin-right: 0px;
 }
 
 #wrap div.tb_tweet {
