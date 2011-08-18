@@ -9,13 +9,13 @@
 	<h1><?php echo get_the_title($this_page); ?></h1>
 	<?php if(is_search()) { ?>
 	<?php get_search_form(); ?>
-	<div id="searchMeta" class="grid13col">
+	<div id="searchMeta" class="grid13col push4">
 		<p id="searchedFor" class="left">Searched for: <?php echo $_REQUEST['s']; ?></p>
 		<?php $start_count = 1;
 		if($wp_query->is_paged) {
 			$start_count += $wp_query->post_count * ($wp_query->query['paged']-1);
 		} ?>
-		<p id="results" class="right">Results <?php echo $start_count; ?> to <?php echo $start_count+$wp_query->post_count; ?> of <?php echo $wp_query->found_posts; ?></p>
+		<p id="results" class="right">Results <span class="bold"><?php echo $start_count; ?></span> to <span class="bold"><?php echo $start_count+$wp_query->post_count; ?></span> of <span class="bold"><?php echo $wp_query->found_posts; ?></span></p>
 	</div>
 	<?php } ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

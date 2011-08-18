@@ -139,6 +139,11 @@ p {
 ------------------------------------------------------------------------------ Generic Typography
 */
 
+
+.bold, strong {
+	font-weight: bold;
+}
+
 h1, h2, h3, h4, h5, h6, .large {
 	font-family: 'CalvertMTStdLight';
 	font-weight: normal;
@@ -1173,6 +1178,12 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 p#searchedFor {
 
 }
+
+p#searchedFor .hilite {
+	background-color: transparent;
+	font-weight: bold;
+}
+
 
 p#results {
 	
