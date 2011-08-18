@@ -1150,6 +1150,20 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	
 }
 
+/*
+------------------------------------------------------------------------------ Search Page
+*/
+
+#inline_s {
+	width: 300px;
+	height: 24px;
+	padding: 3px 5px;
+	border: #b4acad 1px solid;
+	background-image: url(images/magDark.png);
+	background-position: center right;
+	background-repeat: no-repeat;
+}
+
 
 /*
 ------------------------------------------------------------------------------ Browser fixes & workarounds
