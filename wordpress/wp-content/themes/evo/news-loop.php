@@ -30,7 +30,10 @@
 		<h2><?php the_title(); ?></h2>
 		<?php endif; ?>
 		<!--<p class="large"><?php //echo get_the_excerpt(); ?></p>-->
-		<?php the_content(); ?>
+		<?php the_excerpt(); ?>
+		<a href="<?php the_permalink(); ?>"><?php the_permalink(); ?></a>
+		
+		
 	</div>
 	<?php endwhile; endif; ?>
 	
