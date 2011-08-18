@@ -9,12 +9,14 @@
 	<h1><?php echo get_the_title($this_page); ?></h1>
 	<?php if(is_search()) { ?>
 	<?php get_search_form(); ?>
-	<p id="searchedFor">Searched for: <?php echo $_REQUEST['s']; ?></p>
-	<?php $start_count = 1;
-	if($wp_query->is_paged) {
-		$start_count += $wp_query->post_count * ($wp_query->query['paged']-1);
-	} ?>
-	<p id="results">Results <?php echo $start_count; ?> to <?php echo $start_count+$wp_query->post_count; ?> of <?php echo $wp_query->found_posts; ?></p>
+	<div id="searchMeta" class="grid13col">
+		<p id="searchedFor">Searched for: <?php echo $_REQUEST['s']; ?></p>
+		<?php $start_count = 1;
+		if($wp_query->is_paged) {
+			$start_count += $wp_query->post_count * ($wp_query->query['paged']-1);
+		} ?>
+		<p id="results">Results <?php echo $start_count; ?> to <?php echo $start_count+$wp_query->post_count; ?> of <?php echo $wp_query->found_posts; ?></p>
+	</div>
 	<?php } ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="grid3col sharing right">
