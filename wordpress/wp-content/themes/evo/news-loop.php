@@ -9,7 +9,7 @@
 	<h1><?php echo get_the_title($this_page); ?></h1>
 	<?php if(is_search()) { ?>
 	<?php get_search_form(); ?>
-	<div id="searchMeta" class="grid13col push4">
+	<div id="searchMeta" class="grid13col">
 		<p id="searchedFor" class="left">Searched for: <?php echo $_REQUEST['s']; ?></p>
 		<?php $start_count = 1;
 		if($wp_query->is_paged) {
