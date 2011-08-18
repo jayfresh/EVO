@@ -23,16 +23,23 @@
 		<?php addThis(get_permalink(),get_the_title()); ?>
 	</div>
 	<div class="grid13col newsArticle">
-		<p class="push3 date"><?php echo get_the_date('d.m.y'); ?></p>
+		<?php if !(is_search()) { ?><p class="push3 date"><?php echo get_the_date('d.m.y'); ?></p><?php } ?>
 		<?php if(!is_singular()) : ?>
 		<h2 class="pull2"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		<?php else : ?>
 		<h2><?php the_title(); ?></h2>
 		<?php endif; ?>
 		<!--<p class="large"><?php //echo get_the_excerpt(); ?></p>-->
-		<?php the_excerpt(); ?>
-		<a href="<?php the_permalink(); ?>"><?php the_permalink(); ?></a>
 		
+		<?php 
+		if(is_search()) { 
+			the_excerpt(); ?>
+		<a href="<?php the_permalink(); ?>"><?php the_permalink(); ?></a>
+		<?php 
+		} else { 
+			the_content();
+		?>
+		<?php } ?>
 		
 	</div>
 	<?php endwhile; endif; ?>
