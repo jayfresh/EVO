@@ -806,7 +806,7 @@ a.block:hover {
 	border: 10px solid white;
 	border-width: 7px 0px 7px 7px;
 	border-color: transparent;
-	border-left-color: auto;
+	border-left-color: white;
 	display: block;
 	width: 0px;
 	height: 0px;
