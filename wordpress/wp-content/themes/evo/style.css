@@ -777,16 +777,22 @@ a.block:hover {
 }
 
 .bigblock {
-	width: 336px;
+	width: 340px;
 	height: 336px;
 	margin-right: 10px;
 	position: relative;
 	overflow: hidden;
 	float: left;
 }
+
+.bigblock p {
+	
+}
+
 .bigblock .container {
 	position: relative;
 	padding: 6px;
+	width: 260px;
 }
 .bigblock img {
 	position: absolute;
