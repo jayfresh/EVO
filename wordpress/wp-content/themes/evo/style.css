@@ -1166,6 +1166,10 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	font-size: 15px;
 }
 
+#searchMeta {
+	overflow: hidden;
+}
+
 p#searchedFor {
 
 }
