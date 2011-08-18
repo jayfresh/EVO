@@ -1166,8 +1166,11 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	background-repeat: repeat-x;
 	background-position: left top;
 	border-width: 1px 0px;
-	padding-top: 23px;
-	
+	padding-top: 23px;	
+}
+
+a.page-numbers {
+	margin-right: 10px;
 }
 
 /*
