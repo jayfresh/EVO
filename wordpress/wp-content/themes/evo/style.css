@@ -790,6 +790,30 @@ a.block:hover {
 	
 }
 
+
+.bigblock a {
+    position: relative;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	letter-spacing: 0.06em;
+	padding-left: 15px;
+	display: block;
+}
+
+.bigblock a:before {
+	border: 10px solid white;
+	border-width: 7px 0px 7px 7px;
+	border-color: transparent transparent transparent white;
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: relative;
+	left: -18px;
+	top: 15px;
+}
+
+
 .bigblock .container {
 	position: relative;
 	padding: 6px;
