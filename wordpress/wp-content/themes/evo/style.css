@@ -1018,6 +1018,10 @@ ul.category li.grid12col {
 	color: #636466;
 }
 
+#twitterWidget p a {
+	margin-right: 5px;
+}
+
 #wrap div.tb_tweet {
 	border: none;
 	padding: 0px;
