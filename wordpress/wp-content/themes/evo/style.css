@@ -1166,6 +1166,15 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	font-size: 15px;
 }
 
+p#searchedFor {
+
+}
+
+p#results {
+	
+}
+
+
 
 /*
 ------------------------------------------------------------------------------ Browser fixes & workarounds

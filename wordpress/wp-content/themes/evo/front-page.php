@@ -53,7 +53,7 @@ global $post;
 	<div id="informationFor" class="grid16col carousel border right">
 		<h2 class="small">Information For</h2>
 		<?php $top_page = get_post_by_slug('information-for','page');
-		$child_pages = new WP_Query("post_type=page&post_parent=".$top_page->ID."&orderby=menu_order&order=asc");
+		$child_pages = new WP_Query("post_type=page&posts_per_page=-1&post_parent=".$top_page->ID."&orderby=menu_order&order=asc");
 		if($child_pages->have_posts()) : ?>
 		<!-- deliberately no whitespace between li elements -->
 		<ul id="homeLinks">
