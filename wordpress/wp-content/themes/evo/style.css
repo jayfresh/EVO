@@ -778,7 +778,7 @@ a.block:hover {
 
 .bigblock {
 	width: 340px;
-	height: 336px;
+	height: 300px;
 	margin-right: 10px;
 	position: relative;
 	overflow: hidden;
@@ -803,7 +803,7 @@ a.block:hover {
 	top: 0;
 }
 .bigblock:nth-of-type(2) img {
-	left: -346px;
+	left: -352px;
 	top: 0;
 }
 .bigblock:nth-of-type(3) img {
@@ -811,7 +811,7 @@ a.block:hover {
 	top: -336px;
 }
 .bigblock:nth-of-type(4) img {
-	left: -346px;
+	left: -352px;
 	top: -336px;
 }
 
