@@ -4,7 +4,7 @@
 	</div><!-- end #wrap -->
 	<div id="footer" class="footer">
 		<div class="jbasewrap overflow">
-			<div class="grid12col">
+			<div class="grid20col">
 				<?php get_template_part('snippets/footer-menu'); ?>
 			</div>
 			<div class="grid4col right">

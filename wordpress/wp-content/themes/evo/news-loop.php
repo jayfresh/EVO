@@ -9,26 +9,38 @@
 	<h1><?php echo get_the_title($this_page); ?></h1>
 	<?php if(is_search()) { ?>
 	<?php get_search_form(); ?>
-	<p>Searched for: <?php echo $_REQUEST['s']; ?></p>
-	<?php $start_count = 1;
-	if($wp_query->is_paged) {
-		$start_count += $wp_query->post_count * ($wp_query->query['paged']-1);
-	} ?>
-	<p>Results <?php echo $start_count; ?> to <?php echo $start_count+$wp_query->post_count; ?> of <?php echo $wp_query->found_posts; ?></p>
+	<div id="searchMeta" class="grid13col">
+		<p id="searchedFor" class="left">Searched for: <?php echo $_REQUEST['s']; ?></p>
+		<?php $start_count = 1;
+		if($wp_query->is_paged) {
+			$start_count += $wp_query->post_count * ($wp_query->query['paged']-1);
+		} ?>
+		<p id="results" class="right">Results <span class="bold"><?php echo $start_count; ?></span> to <span class="bold"><?php echo $start_count+$wp_query->post_count; ?></span> of <span class="bold"><?php echo $wp_query->found_posts; ?></span></p>
+	</div>
 	<?php } ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="grid3col sharing right">
 		<?php addThis(get_permalink(),get_the_title()); ?>
 	</div>
 	<div class="grid13col newsArticle">
-		<p class="push3 date"><?php echo get_the_date('d.m.y'); ?></p>
+		<?php if(!is_search()) { ?><p class="push3 date"><?php echo get_the_date('d.m.y'); ?></p><?php } ?>
 		<?php if(!is_singular()) : ?>
-		<h2 class="pull2"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+		<h2 class="<?php if(!is_search()) { echo "pull2"; } else { echo "push3"; } ?>"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 		<?php else : ?>
 		<h2><?php the_title(); ?></h2>
 		<?php endif; ?>
 		<!--<p class="large"><?php //echo get_the_excerpt(); ?></p>-->
-		<?php the_content(); ?>
+		
+		<?php 
+		if(is_search()) { 
+			the_excerpt(); ?>
+		<a href="<?php the_permalink(); ?>"><?php the_permalink(); ?></a>
+		<?php 
+		} else { 
+			the_content();
+		?>
+		<?php } ?>
+		
 	</div>
 	<?php endwhile; endif; ?>
 	

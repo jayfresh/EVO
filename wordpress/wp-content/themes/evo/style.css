@@ -139,6 +139,11 @@ p {
 ------------------------------------------------------------------------------ Generic Typography
 */
 
+
+.bold, strong {
+	font-weight: bold;
+}
+
 h1, h2, h3, h4, h5, h6, .large {
 	font-family: 'CalvertMTStdLight';
 	font-weight: normal;
@@ -772,16 +777,49 @@ a.block:hover {
 }
 
 .bigblock {
-	width: 336px;
-	height: 336px;
+	width: 340px;
+	height: 300px;
 	margin-right: 10px;
 	position: relative;
 	overflow: hidden;
 	float: left;
+	margin-bottom: 12px;
 }
+
+.bigblock h1, .bigblock h2, .bigblock h3, .bigblock h4, .bigblock h5, .bigblock h6 {
+	font-family: 'CalvertMTStdLight';
+}
+
+
+.bigblock a {
+    position: relative;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+	letter-spacing: 0.06em;
+	padding-left: 15px;
+	display: block;
+}
+
+.bigblock a:before {
+	content: '';
+	border: 10px solid white;
+	border-width: 7px 0px 7px 7px;
+	border-color: transparent;
+	border-left-color: white;
+	display: block;
+	width: 0px;
+	height: 0px;
+	position: relative;
+	left: -13px;
+	top: 15px;
+}
+
+
 .bigblock .container {
 	position: relative;
-	padding: 6px;
+	padding: 10px;
+	width: 260px;
 }
 .bigblock img {
 	position: absolute;
@@ -791,7 +829,7 @@ a.block:hover {
 	top: 0;
 }
 .bigblock:nth-of-type(2) img {
-	left: -346px;
+	left: -352px;
 	top: 0;
 }
 .bigblock:nth-of-type(3) img {
@@ -799,7 +837,7 @@ a.block:hover {
 	top: -336px;
 }
 .bigblock:nth-of-type(4) img {
-	left: -346px;
+	left: -352px;
 	top: -336px;
 }
 
@@ -1013,6 +1051,14 @@ ul.category li.grid12col {
 	color: #636466;
 }
 
+#twitterWidget p a {
+	margin-right: 13px;
+}
+
+#twitterWidget p a:last-child {
+	margin-right: 0px;
+}
+
 #wrap div.tb_tweet {
 	border: none;
 	padding: 0px;
@@ -1146,9 +1192,49 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	background-repeat: repeat-x;
 	background-position: left top;
 	border-width: 1px 0px;
-	padding-top: 23px;
+	padding-top: 23px;	
+}
+
+.page-numbers {
+	margin-right: 5px;
+}
+
+/*
+------------------------------------------------------------------------------ Search Page
+*/
+
+#inline_s {
+	width: 300px;
+	height: 24px;
+	padding: 5px 5px 0px;
+	border: #b4acad 1px solid;
+	background-image: url(images/magDark.png);
+	background-position: 284px center;
+	background-repeat: no-repeat;
+	font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 15px;
 	
 }
+
+#searchMeta {
+	overflow: hidden;
+	margin-top: 24px;
+}
+
+p#searchedFor {
+
+}
+
+p#searchedFor .hilite {
+	background-color: transparent;
+	font-weight: bold;
+}
+
+
+p#results {
+	
+}
+
 
 
 /*
