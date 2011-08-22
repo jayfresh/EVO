@@ -20,6 +20,7 @@ $(document).ready(function() {
 				'left': 0
 			})
 			.click(function(e) {
+				window.clearTimeout(setCarouselTimeout.timeout);
 				if($(e.target).hasClass('next')) {
 					moveStrip(1);
 				}
@@ -27,6 +28,7 @@ $(document).ready(function() {
 					moveStrip(-1);
 				}
 			});
+		setCarouselTimeout();
 	});
 	
 	// turn the answers to the front page questions the same colour as the questions
@@ -63,4 +65,11 @@ function moveStrip(direction) {
 	}, 'slow');
 }
 
+function setCarouselTimeout() {
+	arguments.callee.timeout = window.setInterval(function() {
+		moveStrip(1);
+	}, 4000);
+}
+
+// for the Highlight Search Terms plugin
 var hlst_areas = ["div.article"];
