@@ -799,6 +799,7 @@ a.block:hover {
 	letter-spacing: 0.06em;
 	padding-left: 15px;
 	display: block;
+	color: inherit; /* this is going to be inherited by the :before element, and it inherits the colour of the span wrapped round it */
 }
 
 .bigblock a:before {
@@ -806,7 +807,7 @@ a.block:hover {
 	border: 10px solid white;
 	border-width: 7px 0px 7px 7px;
 	border-color: transparent;
-	border-left-color: white;
+	border-left-color: inherit;
 	display: block;
 	width: 0px;
 	height: 0px;
