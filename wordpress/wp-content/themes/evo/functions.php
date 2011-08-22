@@ -161,7 +161,7 @@ function post_type_q_a() {
 			'supports' => array (
 				'title',
 				'thumbnail',
-				//'editor',
+				'editor',
 				'page-attributes'
 			),
 			'hierarchical' => true,

@@ -23,7 +23,7 @@ global $post;
 				while($q_a_query->have_posts()) : $q_a_query->the_post(); ?>
 			<div class="grid16col carousel">
 				<?php the_post_thumbnail('carousel'); ?>
-				<p><?php the_title(); ?></p>
+				<p><?php the_content(); ?></p>
 				<a href="<?php echo get_post_meta($post->ID,'_q_a_link', true); ?>" class="answer"><span></span> Answer</a>
 				<span class="prev">prev</span>
 				<span class="next">next</span>

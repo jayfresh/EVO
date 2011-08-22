@@ -29,6 +29,14 @@ $(document).ready(function() {
 			});
 	});
 	
+	// turn the answers to the front page questions the same colour as the questions
+	$('.carousel').each(function() {
+		var color = $(this).find('span:eq(0)').css('color');
+		$(this).find('a.answer').css('color', color)
+			.find('span')
+			.css('borderLeftColor', color);
+	});
+	
 	// cover for any browsers that don't support placeholder
 	$('input').placeholder();
 	
