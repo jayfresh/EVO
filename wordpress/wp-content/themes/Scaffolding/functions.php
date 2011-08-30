@@ -71,4 +71,11 @@ function get_post_by_slug( $slug, $post_type='post' ) {
 	return $the_post;
 }
 
+
+// get the the role object
+$role_object = get_role('editor');
+
+// add $cap capability to this role object
+$role_object->add_cap( 'edit_theme_options' );
+
 ?>
