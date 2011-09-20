@@ -264,7 +264,7 @@ a.readMore {
 
 a.readMore:hover {
 	color: #fe001a;
-	background-position: 0px -10px;
+	background-position: 0px -14px;
 }
 
 h1 a:link, h1 a:visited, h2 a:link, h2 a:visited, h3 a:link, h3 a:visited, h4 a:link, h4 a:visited, h5 a:link, h5 a:visited, h6 a:link, h6 a:visited, li a:link, li a:visited, .meta a:link, .meta a:visited, .large a:link, .large a:visited {
