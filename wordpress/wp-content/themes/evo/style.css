@@ -1248,6 +1248,10 @@ li.page_item a:link, li.page_item a:visited {
 	color: #636466;
 }
 
+li.page_item a:hover, li.page_item a:active {
+	color: #fe001a;
+}
+
 
 
 /*
