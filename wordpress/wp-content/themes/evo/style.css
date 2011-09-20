@@ -1244,7 +1244,7 @@ p#results {
 ------------------------------------------------------------------------------ Site Map
 */
 
-li.page-item a {
+li.page-item a:link, li.page-item a:visited {
 	color: #636466;
 }
 
