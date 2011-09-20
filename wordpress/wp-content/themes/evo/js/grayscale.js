@@ -225,6 +225,10 @@ var grayscale = (function(){
         
     };
     
+    init.getCache = function(elem) { // JRL
+    	return data(elem);
+    };
+    
     init.reset = function(context) {
         // Handle if a DOM collection is passed instead of a single el:
         if (context && context[0] && context.length && context[0].nodeName) {
