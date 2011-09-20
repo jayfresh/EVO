@@ -245,7 +245,7 @@ a:link, a:visited {
 }
 
 a:hover {
-	color: #fe001a;
+	color: #f74234;
 	text-decoration: underline;
 }
 
@@ -636,7 +636,7 @@ ul.breadcrumb li:last-child:after {
 
 ul.breadcrumb li a:hover {
 	color: #fe001a;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /*
@@ -1039,7 +1039,7 @@ ul.category li.grid12col {
 }
 
 #twitterWidget ul.tweets {
-	margin: 0px 0px;
+	margin: -6px 0px 0px;
 }
 
 #twitterWidget ul.tweets li {
@@ -1047,7 +1047,7 @@ ul.category li.grid12col {
 	background-image: url(images/dots-singlerow.png);
 	background-repeat: repeat-x;
 	background-position: left top;
-	padding: 18px 0px;	
+	padding: 18px 0px 0px;	
 }
 
 #twitterWidget p {
@@ -1238,6 +1238,14 @@ p#searchedFor .hilite {
 
 p#results {
 	
+}
+
+/*
+------------------------------------------------------------------------------ Site Map
+*/
+
+li.page-item a {
+	color: #636466;
 }
 
 
