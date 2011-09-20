@@ -245,7 +245,7 @@ a:link, a:visited {
 }
 
 a:hover {
-	color: #fe001a;
+	color: #f74234;
 	text-decoration: underline;
 }
 
@@ -282,7 +282,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, li a:hov
 } 
 
 .footer a:hover, .footer a:active {
-	text-decoration: underline;
+	text-decoration: none;
+    color: #919396;
 } 
 
 .footer ul {
@@ -485,7 +486,8 @@ li#menu-count-0:hover {
 	background-position: right center;
 	height: 24px;
 	font-size: 12px;
-	margin-bottom: 24px;
+	margin-bottom: 25px;
+	margin-top: 2px;
 }
 
 .hilite {
@@ -522,7 +524,8 @@ li#menu-count-0:hover {
 }
 
 #search ul li a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+    color: #d9d9d9;
 }
 
 /*
@@ -633,7 +636,7 @@ ul.breadcrumb li:last-child:after {
 
 ul.breadcrumb li a:hover {
 	color: #fe001a;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /*
@@ -1036,7 +1039,7 @@ ul.category li.grid12col {
 }
 
 #twitterWidget ul.tweets {
-	margin: 0px 0px;
+	margin: -6px 0px 0px;
 }
 
 #twitterWidget ul.tweets li {
@@ -1044,7 +1047,7 @@ ul.category li.grid12col {
 	background-image: url(images/dots-singlerow.png);
 	background-repeat: repeat-x;
 	background-position: left top;
-	padding: 18px 0px;	
+	padding: 18px 0px 0px;	
 }
 
 #twitterWidget p {
@@ -1235,6 +1238,14 @@ p#searchedFor .hilite {
 
 p#results {
 	
+}
+
+/*
+------------------------------------------------------------------------------ Site Map
+*/
+
+li.page-item a:link, li.page-item a:visited {
+	color: #636466;
 }
 
 
