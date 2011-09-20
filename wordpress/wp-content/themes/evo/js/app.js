@@ -49,13 +49,30 @@ $(document).ready(function() {
 	});
 	
 	// add grayscale effect to bigblock images
-	$('.bigblock img').each(function() {
-		grayscale($(this).clone().insertBefore(this));
-	});
+	var cloned;
+	if(!$.browser.msie) {
+		$('.bigblock img').each(function(i) {
+			if(i===0) {
+				cloned = this;
+				grayscale.prepare(this);
+			}
+		});
+	}
 	$('.bigblock').hover(function() {
-		$(this).find('img:eq(1)').hide();
+		var $img = $(this).find('img');
+		if($.browser.msie) {
+			grayscale($img);
+		} else {
+			$img.data('src',$img.attr('src'))
+				.attr('src',grayscale.getCache(cloned).dataURL);
+		}		
 	}, function() {
-		$(this).find('img:eq(1)').show();
+		var $img = $(this).find('img');
+		if($.browser.msie) {
+			grayscale.reset($img);
+		} else {
+			$img.attr('src',$img.data('src'));
+		}
 	});
 });
 
