@@ -47,7 +47,7 @@ $(document).ready(function() {
 		$(this).addClass('spanified')
 			.children('li').wrapInner('<span>');
 	});
-	
+	/*
 	// add grayscale effect to bigblock images
 	var cloned;
 	if(!$.browser.msie) {
@@ -73,7 +73,7 @@ $(document).ready(function() {
 		} else {
 			$img.attr('src',$img.data('src'));
 		}
-	});
+	});*/
 });
 
 function moveStrip(direction) {
