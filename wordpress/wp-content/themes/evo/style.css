@@ -282,7 +282,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, li a:hov
 } 
 
 .footer a:hover, .footer a:active {
-	text-decoration: underline;
+	text-decoration: none;
+    color: #919396;
 } 
 
 .footer ul {
@@ -485,7 +486,8 @@ li#menu-count-0:hover {
 	background-position: right center;
 	height: 24px;
 	font-size: 12px;
-	margin-bottom: 24px;
+	margin-bottom: 25px;
+	margin-top: 2px;
 }
 
 .hilite {
@@ -522,7 +524,8 @@ li#menu-count-0:hover {
 }
 
 #search ul li a:hover {
-	text-decoration: underline;
+	text-decoration: none;
+    color: #d9d9d9;
 }
 
 /*
