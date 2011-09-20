@@ -47,6 +47,16 @@ $(document).ready(function() {
 		$(this).addClass('spanified')
 			.children('li').wrapInner('<span>');
 	});
+	
+	// add grayscale effect to bigblock images
+	$('.bigblock img').each(function() {
+		grayscale($(this).clone().insertBefore(this));
+	});
+	$('.bigblock').hover(function() {
+		$(this).find('img:eq(1)').hide();
+	}, function() {
+		$(this).find('img:eq(1)').show();
+	});
 });
 
 function moveStrip(direction) {

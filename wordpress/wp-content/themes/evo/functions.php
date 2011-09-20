@@ -117,6 +117,7 @@ function add_scripts() {
 	$template_url = get_bloginfo( 'stylesheet_directory' );	
 	wp_enqueue_script('hoverIntent',$template_url.'/js/jquery.hoverIntent.min.js','','',true);
 	wp_enqueue_script('placeholder',$template_url.'/js/jquery.placeholder.min.js','','',true);
+	wp_enqueue_script('grayscale',$template_url.'/js/grayscale.js','','',true);	
 }    
 
 add_action('wp_loaded', 'add_scripts'); // wp_loaded chosen as it is after init, which is used by parent theme to register scripts
