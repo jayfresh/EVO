@@ -19,7 +19,7 @@
 	</div>
 	<?php } ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	<div class="grid3col sharing right <?php if(is_search()) { echo "pull2" } ?>">
+	<div class="grid3col sharing right <?php if(is_search()) { echo "pull2"; } ?>">
 		<?php addThis(get_permalink(),get_the_title()); ?>
 	</div>
 	<div class="grid13col newsArticle">
