@@ -485,14 +485,26 @@ li#menu-count-0:hover {
 	color: #eeeee7;
 	font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	width: 100%;
-	background-image: url(images/mag.png);
-	background-repeat: no-repeat;
-	background-position: right center;
 	height: 24px;
 	font-size: 12px;
 	margin-bottom: 25px;
 	margin-top: 2px;
 }
+
+#searchButton {
+	background-color: transparent;
+	border: none;
+	background-image: url(images/mag.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 24px;
+	width: 50px;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+}
+
+
 
 .hilite {
 	background-color: #FFFE67;
