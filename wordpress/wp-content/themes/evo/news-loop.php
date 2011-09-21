@@ -15,7 +15,7 @@
 		if($wp_query->is_paged) {
 			$start_count += $wp_query->post_count * ($wp_query->query['paged']-1);
 		} ?>
-		<p id="results" class="right">Results <span class="bold"><?php echo $start_count; ?></span> to <span class="bold"><?php echo $start_count+$wp_query->post_count; ?></span> of <span class="bold"><?php echo $wp_query->found_posts; ?></span></p>
+		<p id="results" class="right">Results <span class="bold"><?php echo $start_count; ?></span> to <span class="bold"><?php echo $start_count+$wp_query->post_count-1; ?></span> of <span class="bold"><?php echo $wp_query->found_posts; ?></span></p>
 	</div>
 	<?php } ?>
 	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
