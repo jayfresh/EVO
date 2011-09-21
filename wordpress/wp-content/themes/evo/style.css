@@ -1234,7 +1234,11 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	background-repeat: no-repeat;
 	font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 15px;
-	
+	-webkit-appearance: none;
+}
+
+#inline_s::-webkit-search-cancel-button {
+	-webkit-appearance: none;
 }
 
 #searchMeta {
