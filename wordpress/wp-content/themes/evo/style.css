@@ -1236,16 +1236,30 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	height: 24px;
 	padding: 5px 5px 0px;
 	border: #b4acad 1px solid;
-	background-image: url(images/magDark.png);
-	background-position: 284px center;
-	background-repeat: no-repeat;
 	font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 15px;
-	-webkit-appearance: none;
+	font-size: 15px;	
 }
 
-#inline_s::-webkit-search-cancel-button {
-	-webkit-appearance: none;
+#inline_searchButton {
+	background-color: transparent;
+	border: none;
+	background-image: url(images/magDark.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 24px;
+	width: 25px;
+	margin-top: -28px;
+	margin-left: 280px;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	z-index: 1;
+}
+
+#inline_searchButton:hover {
+	opacity: 0.6;
+	cursor: pointer;
 }
 
 #searchMeta {
