@@ -498,12 +498,17 @@ li#menu-count-0:hover {
 	background-repeat: no-repeat;
 	background-position: right center;
 	height: 24px;
-	width: 50px;
+	width: 25px;
+	float: right;
+	margin-top: -55px;
+	cursor: pointer;
 	text-indent: -9999px;
 	overflow: hidden;
 	display: block;
 }
-
+#searchButton:hover {
+	opacity: 0.6;
+}
 
 
 .hilite {
