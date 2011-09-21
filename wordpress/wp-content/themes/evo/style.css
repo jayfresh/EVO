@@ -478,7 +478,7 @@ li#menu-count-0:hover {
 	color: #fe001a;
 }
 
-#search input {
+#search input#field {
 	background-color: transparent;
 	border: none;
 	border-bottom: 1px solid #eeeee7;
@@ -498,12 +498,19 @@ li#menu-count-0:hover {
 	background-repeat: no-repeat;
 	background-position: right center;
 	height: 24px;
-	width: 50px;
+	width: 25px;
+	float: right;
+	margin-top: -55px;
 	text-indent: -9999px;
 	overflow: hidden;
 	display: block;
+	position: relative;
+	z-index: 1;
 }
-
+#searchButton:hover {
+	opacity: 0.6;
+	cursor: pointer;
+}
 
 
 .hilite {
