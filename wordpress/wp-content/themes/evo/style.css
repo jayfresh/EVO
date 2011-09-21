@@ -1259,6 +1259,7 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 	position: relative;
 	z-index: 1;
 }
+
 #inline_searchButton:hover {
 	opacity: 0.6;
 	cursor: pointer;
