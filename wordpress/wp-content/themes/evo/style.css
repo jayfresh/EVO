@@ -398,6 +398,10 @@ ul#nav li {
 	list-style: none;
 }
 
+ul#nav li.current-menu-item a {
+	color: #fe001a;
+}
+
 ul#nav {
 	width: 480px;
 	margin-left: 0px;
