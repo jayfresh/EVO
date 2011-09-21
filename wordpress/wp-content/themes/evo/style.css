@@ -501,13 +501,15 @@ li#menu-count-0:hover {
 	width: 25px;
 	float: right;
 	margin-top: -55px;
-	cursor: pointer;
 	text-indent: -9999px;
 	overflow: hidden;
 	display: block;
+	position: relative;
+	z-index: 1;
 }
 #searchButton:hover {
 	opacity: 0.6;
+	cursor: pointer;
 }
 
 
