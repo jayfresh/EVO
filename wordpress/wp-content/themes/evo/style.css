@@ -474,7 +474,7 @@ li#menu-count-0:hover {
 	color: #fe001a;
 }
 
-#search input {
+#search input#field {
 	background-color: transparent;
 	border: none;
 	border-bottom: 1px solid #eeeee7;
