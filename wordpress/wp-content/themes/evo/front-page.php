@@ -2,6 +2,8 @@
 get_header();
 get_template_part('snippets/header');
 global $post;
+global $more;
+$more = 0;
 ?>
 <!-- home page structure here -->
 <div class="grid24col innerWrap push2">
