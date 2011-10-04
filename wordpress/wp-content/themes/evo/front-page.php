@@ -61,8 +61,8 @@ global $more;
 		<!-- deliberately no whitespace between li elements -->
 		<ul id="homeLinks">
 			<?php while($child_pages->have_posts()) : $child_pages->the_post(); ?>
-			<li>RAAR
-				<?php the_post_thumbnail( $info_page, 'homeinfolinks' ); ?>
+			<li>
+				<?php echo get_the_post_thumbnail( $info_page, 'homeinfolinks' ); ?>
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 			</li><?php endwhile; ?>
 		</ul>
