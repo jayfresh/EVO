@@ -16,18 +16,18 @@ $(document).ready(function() {
 		var $strip = $(this).children('.strip'),
 			$blocks = $strip.children('.carousel');
 		$strip.css({
-				'width': $blocks.length*$(this).width(),
-				'left': 0
-			})
-			.click(function(e) {
-				window.clearTimeout(setCarouselTimeout.timeout);
-				if($(e.target).hasClass('next')) {
-					moveStrip(1);
-				}
-				if($(e.target).hasClass('prev')) {
-					moveStrip(-1);
-				}
-			});
+			'width': $blocks.length*$(this).width(),
+			'left': 0
+		})
+		.click(function(e) {
+			window.clearTimeout(setCarouselTimeout.timeout);
+			if($(e.target).hasClass('next')) {
+				moveStrip(1);
+			}
+			if($(e.target).hasClass('prev')) {
+				moveStrip(-1);
+			}
+		});
 		setCarouselTimeout();
 	});
 	
@@ -84,6 +84,8 @@ $(document).ready(function() {
 			halfWidth = $img.width() / 2,
 			currLeft = parseInt($img.css('left'),10);
 		$img.css('left', currLeft+halfWidth);	
+	}).click(function() {
+		window.location = $(this).find('a:eq(0)').attr('href');
 	});
 });
 
