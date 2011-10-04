@@ -907,10 +907,6 @@ a.block:hover {
 }
 
 .infoblock .container {
-	background-color: red;
-}
-
-.infoblock .container {
 	position: relative;
 	height: 452px;
 	padding: 18px 20px 0px 5px;
