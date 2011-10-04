@@ -906,11 +906,16 @@ ul#homeLinks li {
 	float: left;
 	display: block;
 	margin-right: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+ul#homeLinks li img {
+	position: absolute;
 }
 
 ul#homeLinks li a {
 	width: 94px;
-	border-right: 5px solid #eeeee7;
 	display: inline-block;
 	height: 302px;
 	font-family: 'CalvertMTStdLight';
