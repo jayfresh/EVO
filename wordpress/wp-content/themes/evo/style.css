@@ -895,7 +895,6 @@ a.block:hover {
 }
 
 ul#homeLinks {
-	background-image: url(images/infoFor_bg.jpg);
 	height: 320px;
 	margin-left: 0px;
 	position: relative;
@@ -906,6 +905,7 @@ ul#homeLinks li {
 	list-style: none;
 	float: left;
 	display: block;
+	margin-right: 5px;
 }
 
 ul#homeLinks li a {
@@ -917,11 +917,6 @@ ul#homeLinks li a {
 	color: white;
 	padding: 18px 20px 0px 5px;	
 	font-size: 16px;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
 }
 
 ul#homeLinks li a:hover {
@@ -930,8 +925,8 @@ ul#homeLinks li a:hover {
 	
 }
 
-ul#homeLinks li:last-child a {
-	border-right: none;
+ul#homeLinks li:last-child {
+	margin-right: 0px;
 }
 
 .carouselWrapper {

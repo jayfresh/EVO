@@ -1,6 +1,7 @@
 <?php
 add_theme_support('post-thumbnails');
 add_image_size( 'carousel', 615, 324, true );
+add_image_size( 'homeinfolinks', 615, 999, true );
 
 // Register Main and Footer Menu
 if ( function_exists( 'register_nav_menu' ) ) {
