@@ -904,6 +904,11 @@ a.block:hover {
 	left: -710px;
 }
 
+.infoblock .container {
+	position: relative;
+	height: 452px;
+}
+
 
 /*
 ------------------------------------------------------------------------------ Home Page
