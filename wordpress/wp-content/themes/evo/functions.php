@@ -320,6 +320,8 @@ function end_topic_shortcode($attr) {
 	return $html;
 }
 
+// Standard bit of JB Duplication going on here:
+
 add_shortcode('start-info', 'start_info_shortcode');
 $topic_shortcode_count = 0;
 function start_info_shortcode($attr) {
