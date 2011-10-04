@@ -815,6 +815,10 @@ a.block:hover {
 	color: white;
 }
 
+.bigblock:hover {
+	cursor: pointer;
+}
+
 .bigblock h1, .bigblock h2, .bigblock h3, .bigblock h4, .bigblock h5, .bigblock h6 {
 	font-family: 'CalvertMTStdLight';
 	color: white;
@@ -884,6 +888,10 @@ a.block:hover {
 	position: relative;
 }
 
+.infoblock:hover {
+	cursor: pointer;
+}
+
 .infoblock img {
 	position: absolute;
 }
@@ -909,7 +917,7 @@ a.block:hover {
 .infoblock .container {
 	position: relative;
 	height: 452px;
-	padding: 18px 20px 0px 5px;
+	padding: 18px 5px 0px 5px;
 }
 
 .infoblock .container h4 a {
@@ -921,7 +929,7 @@ a.block:hover {
 }
 
 .infoblock .container p {
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 12px;
 	line-height: 18px;
 }
