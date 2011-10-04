@@ -74,6 +74,17 @@ $(document).ready(function() {
 			$img.attr('src',$img.data('src'));
 		}
 	});*/
+	$('.bigblock').hover(function() {
+		var $img = $(this).find('img'),
+			halfWidth = $img.width() / 2,
+			currLeft = parseInt($img.css('left'),10);
+		$img.css('left', currLeft-halfWidth);
+	}, function() {
+		var $img = $(this).find('img'),
+			halfWidth = $img.width() / 2,
+			currLeft = parseInt($img.css('left'),10);
+		$img.css('left', currLeft+halfWidth);	
+	});
 });
 
 function moveStrip(direction) {

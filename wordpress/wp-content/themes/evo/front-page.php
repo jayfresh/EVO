@@ -2,6 +2,7 @@
 get_header();
 get_template_part('snippets/header');
 global $post;
+global $more;
 ?>
 <!-- home page structure here -->
 <div class="grid24col innerWrap push2">
@@ -11,7 +12,7 @@ global $post;
 	<div id="getInvolved" class="grid8col right box grey border">
 		<h2 class="fixed"><?php the_title(); ?></h2>
 		<p class="large"><?php echo get_the_excerpt(); ?></p>
-		<?php the_content(); ?>
+		<?php $more = 0; the_content(''); ?>
 		<a class="readMore pull1" href="<?php the_permalink(); ?>">Read More</a>
 	</div>
 	<?php endwhile;
@@ -45,7 +46,7 @@ global $post;
 	<div id="globalPartnerships" class="grid8col left box border">
 		<h2 class="fixed"><?php the_title(); ?></h2>
 		<p class="large"><?php echo get_the_excerpt(); ?></p>
-		<?php the_content(); ?>
+		<?php $more = 0; the_content(''); ?>
 		<a class="readMore pull1" href="<?php the_permalink(); ?>">Read More</a>
 	</div>
 	<?php endwhile;
