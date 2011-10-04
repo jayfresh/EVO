@@ -1,7 +1,7 @@
 <?php
 add_theme_support('post-thumbnails');
 add_image_size( 'carousel', 615, 324, true );
-add_image_size( 'homeinfolinks', 1230, 324, true ); //double width to account for sprite
+add_image_size( 'homeinfolinks', 1230, 388, true ); //double width to account for sprite, extra height to account for the unused top part of the image (displays only the bottom 324px)
 
 // Register Main and Footer Menu
 if ( function_exists( 'register_nav_menu' ) ) {
