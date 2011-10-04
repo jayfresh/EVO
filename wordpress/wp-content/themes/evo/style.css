@@ -877,7 +877,7 @@ a.block:hover {
 */
 
 .infoblock {
-	width: 138px;
+	width: 135px;
 	margin-right: 5px;
 	overflow: hidden;
 	float: left;
@@ -889,16 +889,16 @@ a.block:hover {
 }
 
 .infoblock:nth-of-type(2) img {
-	left: -142px;
-}
+	left: -140px;
+
 .infoblock:nth-of-type(3) img {
-	left: -284px;
+	left: -280px;
 }
 .infoblock:nth-of-type(4) img {
-	left: -426px;
+	left: -420px;
 }
 .infoblock:nth-of-type(5) img {
-	left: -568px;
+	left: -560px;
 }
 
 .infoblock:nth-of-type(5) {
@@ -915,10 +915,14 @@ a.block:hover {
     color: white;
     font-family: 'CalvertMTStdLight';
     font-size: 16px;
+    height: 48px;
+    display: block;
 }
 
 .infoblock .container p {
-
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 18px;
 }
 
 /*
