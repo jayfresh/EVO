@@ -939,11 +939,10 @@ ul#homeLinks li a {
 	color: white;
 	padding: 18px 20px 0px 5px;	
 	font-size: 16px;
+	position: relative;
 }
 
 ul#homeLinks li a:hover {
-	background-color: #eeeee7;
-	color: #fe001a;
 	
 }
 
