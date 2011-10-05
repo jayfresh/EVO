@@ -74,7 +74,7 @@ $(document).ready(function() {
 			$img.attr('src',$img.data('src'));
 		}
 	});*/
-	$('.bigblock, #homeLinks li').hover(function() {
+	$('.bigblock, #homeLinks li, .infoblock').hover(function() {
 		var $img = $(this).find('img'),
 			halfWidth = $img.width() / 2,
 			currLeft = parseInt($img.css('left'),10);
