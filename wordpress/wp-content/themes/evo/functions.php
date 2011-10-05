@@ -1,6 +1,7 @@
 <?php
 add_theme_support('post-thumbnails');
 add_image_size( 'carousel', 615, 324, true );
+add_image_size( 'homeinfolinks', 1230, 388, true ); //double width to account for sprite, extra height to account for the unused top part of the image (displays only the bottom 324px)
 
 // Register Main and Footer Menu
 if ( function_exists( 'register_nav_menu' ) ) {
@@ -318,5 +319,30 @@ function end_topic_shortcode($attr) {
 	$html .="</div></div>";
 	return $html;
 }
+
+// Standard bit of JB Duplication going on here:
+
+add_shortcode('start-info', 'start_info_shortcode');
+$topic_shortcode_count = 0;
+function start_info_shortcode($attr) {
+	global $post;
+	global $topic_shortcode_count;
+	$link = $attr ? $attr[0] : "#";
+	$img = get_the_post_thumbnail( $post->ID );
+	$topic_shortcode_count++;
+	$html = $topic_shortcode_count==1 ? '<div class="grid18col">' : '';
+	$html .= '<div class="infoblock">'.$img.'<div class="container">';
+	return $html;
+}
+
+add_shortcode('end-info', 'end_info_shortcode');
+
+function end_info_shortcode($attr) {
+	global $topic_shortcode_count;
+	$html = $topic_shortcode_count==5 ? "</div>" : "";
+	$html .="</div></div>";
+	return $html;
+}
+
 
 ?>

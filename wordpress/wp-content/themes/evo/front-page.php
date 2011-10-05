@@ -53,13 +53,19 @@ global $more;
 		endif; ?>
 	<div id="informationFor" class="grid16col carousel border right">
 		<h2 class="small">Information For</h2>
-		<?php $top_page = get_post_by_slug('information-for','page');
+		<?php 
+		$top_page = get_post_by_slug('information-for','page');
+		$info_page = $top_page -> ID;
 		$child_pages = new WP_Query("post_type=page&posts_per_page=-1&post_parent=".$top_page->ID."&orderby=menu_order&order=asc");
 		if($child_pages->have_posts()) : ?>
 		<!-- deliberately no whitespace between li elements -->
 		<ul id="homeLinks">
-			<?php while($child_pages->have_posts()) : $child_pages->the_post(); ?><li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li><?php endwhile; ?>
-			</ul>
+			<?php while($child_pages->have_posts()) : $child_pages->the_post(); ?>
+			<li>
+				<?php echo get_the_post_thumbnail( $info_page, 'homeinfolinks' ); ?>
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			</li><?php endwhile; ?>
+		</ul>
 		<?php endif; ?>
 	</div>	
 </div>
