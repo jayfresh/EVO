@@ -825,6 +825,9 @@ a.block:hover {
 	height: 60px;
 }
 
+.bigblock p {
+	margin-bottom: 0px;
+}
 
 .bigblock a {
     position: relative;
@@ -1044,9 +1047,9 @@ ul#homeLinks li:last-child {
 .carousel p {
 	color: white;
     font-family: 'CalvertMTStdLight';
-    font-size: 38px;
+    font-size: 37px;
     letter-spacing: 0.02em;
-    line-height: 42px;
+    line-height: 38px;
     padding: 0 100px 0 18px;
     position: absolute;
     top: 10px;
