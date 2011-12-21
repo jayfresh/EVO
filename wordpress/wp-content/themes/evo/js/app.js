@@ -90,7 +90,7 @@ $(document).ready(function() {
 });
 
 function moveStrip(direction) {
-	var $strip = $('.carouselWrapper .strip'),
+	var $strip = $('.carouselWrapper .strip').stop(true,true),
 		$blocks = $strip.children('.carousel'),
 		stripLeft = parseInt($strip.css('left'),10),
 		blockWidth = $blocks.eq(0).width(),
@@ -100,7 +100,7 @@ function moveStrip(direction) {
 		if(toPos>0) {
 			toPos -= blockCount;
 		}
-	$strip.stop(true, true).animate({
+	$strip.animate({
 		'left': toPos*blockWidth
 	}, 'slow');
 }
