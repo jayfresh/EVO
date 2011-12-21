@@ -38,7 +38,7 @@ class Multiple_UL_Walker extends Walker_Nav_Menu
     	global $menu_count;
     	if($depth==0) {
     		if($menu_count==0 || $menu_count % 3 == 1) {
-	    		$output .= "<li id=\"menu-count-$menu_count\"><ul class=\"nav grid4col left\">";
+	    		$output .= "<li class=\"top-level\" id=\"menu-count-$menu_count\"><ul class=\"nav grid4col left\">";
     		}
     		$menu_count++;
     	}

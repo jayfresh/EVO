@@ -398,6 +398,10 @@ ul#nav li {
 	list-style: none;
 }
 
+ul#nav li.top-level {
+	float: left;
+}
+
 ul#nav li.current-menu-item a {
 	color: #fe001a;
 }
@@ -1022,6 +1026,7 @@ ul#homeLinks li:last-child {
 	height: 324px;
 	width: 615px;
 	overflow: hidden;
+	position: relative; /* to make overflow:hidden respected in IE6+7 */
 }
 
 .carouselWrapper .strip {
@@ -1050,6 +1055,7 @@ ul#homeLinks li:last-child {
     padding: 0 100px 0 18px;
     position: absolute;
     top: 10px;
+    left: 0;
 }
 
 .carousel a.answer {
