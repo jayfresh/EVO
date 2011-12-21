@@ -25,7 +25,7 @@ global $more;
 			<div class="grid16col carousel">
 				<?php the_post_thumbnail('carousel'); ?>
 				<p><?php the_content(); ?></p>
-				<a href="<?php echo get_post_meta($post->ID,'_q_a_link', true); ?>" class="answer"><span></span> Answer</a>
+				<a href="<?php echo get_post_meta($post->ID,'_q_a_link', true); ?>" class="answer"><span></span>Read More</a>
 				<span class="prev">prev</span>
 				<span class="next">next</span>
 			</div>

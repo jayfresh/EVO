@@ -70,7 +70,7 @@
 			echo $pagination_html;
 		} elseif(!is_search()) { ?>
 			<div class="pagination">
-				<a href="<?php bloginfo("url"); ?>/news">&lt; Back</a>
+				<a class="back" href="<?php bloginfo("url"); ?>/news">&lt; Back</a>
 			</div>
 		<?php }
 	?>
