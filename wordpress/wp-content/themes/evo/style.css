@@ -992,7 +992,7 @@ ul#homeLinks li img {
 	top: -4px;
 }
 
-ul#homeLinks li:nth-of-type(1) img {
+ul#homeLinks li:nth-child(1) img {
 	left: 0;
 }
 ul#homeLinks li:nth-of-type(2) img {
