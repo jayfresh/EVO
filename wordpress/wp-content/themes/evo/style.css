@@ -19,31 +19,6 @@ Caption Text:	#00a3f8;
 
 */
 
-/* NB These @fontface declarations (and the font files) are only to be used in the development site, until an appropriate embed service is sorted. - JB */
-
-@font-face {
-    font-family: 'CalvertMTStdBold';
-    src: url('fonts/calvertmtstd-bold-webfont.eot');
-    src: url('fonts/calvertmtstd-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/calvertmtstd-bold-webfont.woff') format('woff'),
-         url('fonts/calvertmtstd-bold-webfont.ttf') format('truetype'),
-         url('fonts/calvertmtstd-bold-webfont.svg#CalvertMTStdBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'CalvertMTStdLight';
-    src: url('fonts/calvertmtstd-light-webfont.eot');
-    src: url('fonts/calvertmtstd-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/calvertmtstd-light-webfont.woff') format('woff'),
-         url('fonts/calvertmtstd-light-webfont.ttf') format('truetype'),
-         url('fonts/calvertmtstd-light-webfont.svg#CalvertMTStdLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 
 body {
 	font-family: 'Helvetica Neue LT Std', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -127,7 +102,8 @@ p {
 
 #globalPartnerships p.large, #getInvolved p.large {
 	line-height: 18px;
-	font-family: 'CalvertMTStdBold';
+	font-family: 'Bitter', serif;
+	font-weight: 700;
 	font-size: 15px;
 	margin-top: 12px;
 }
@@ -145,8 +121,8 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, .large {
-	font-family: 'CalvertMTStdLight';
-	font-weight: normal;
+	font-family: 'Bitter', serif;
+	font-weight: 400;
 	letter-spacing: 0.03em;
 }
 
@@ -158,8 +134,8 @@ h1.fixed, h2.fixed, h3.fixed, h4.fixed, h5.fixed, h6.fixed {
 }
 .fixed {
 	margin-bottom: 6px;
-	font-family: 'CalvertMTStdBold';
-	font-weight: normal;
+	font-family: 'Bitter', serif;
+	font-weight: 700;
 	font-size: 11px;
 	color: #636466;
 	text-transform: uppercase;
@@ -563,7 +539,8 @@ li#menu-count-0:hover {
 
 ul.sidebar {
 	margin-left: 0px;
-	font-family: 'CalvertMTStdLight';
+	font-family: 'Bitter', serif;
+	font-weight: 400;
 	font-size: 15px;
 }
 
@@ -688,8 +665,8 @@ div.article {
 .article h5,
 .article h6 {
 	color: #fe001a;
-	font-family: 'CalvertMTStdBold', 'Rockwell Std', Helvetica, Arial, sans-serif;
-	font-weight: normal;
+	font-family: 'Bitter', serif;
+	font-weight: 700;
 }
 
 .article h1 span.subhead {
@@ -826,7 +803,8 @@ a.block:hover {
 }
 
 .bigblock h1, .bigblock h2, .bigblock h3, .bigblock h4, .bigblock h5, .bigblock h6 {
-	font-family: 'CalvertMTStdLight';
+	font-family: 'Bitter', serif;
+	font-weight: 400;
 	color: white;
 	height: 60px;
 }
@@ -936,7 +914,8 @@ a.block:hover {
 
 .infoblock .container h4 a {
     color: white;
-    font-family: 'CalvertMTStdLight';
+    font-family: 'Bitter', serif;
+	font-weight: 400;
     font-size: 16px;
     height: 48px;
     display: block;
@@ -965,7 +944,8 @@ a.block:hover {
 }
 
 #informationFor h2 {
-	font-family: 'CalvertMTStdBold';
+	font-family: 'Bitter', serif;
+	font-weight: 700;
 	font-size: 17px;
 	margin-top: 8px;
 	margin-bottom: 0px;
@@ -1012,7 +992,8 @@ ul#homeLinks li a {
 	width: 94px;
 	display: inline-block;
 	height: 302px;
-	font-family: 'CalvertMTStdLight';
+	font-family: 'Bitter', serif;
+	font-weight: 400;
 	color: white;
 	padding: 18px 20px 0px 5px;	
 	font-size: 16px;
@@ -1053,7 +1034,8 @@ ul#homeLinks li:last-child {
 
 .carousel p {
 	color: white;
-    font-family: 'CalvertMTStdLight';
+    font-family: 'Bitter', serif;
+	font-weight: 400;
     font-size: 37px;
     letter-spacing: 0.02em;
     line-height: 38px;
@@ -1065,7 +1047,8 @@ ul#homeLinks li:last-child {
 
 .carousel a.answer {
 	color: white;
-    font-family: 'CalvertMTStdLight';
+    font-family: 'Bitter', serif;
+	font-weight: 400;
     font-size: 18px;
     letter-spacing: 0.02em;
     padding: 0 0 0 38px;
@@ -1308,7 +1291,8 @@ p.small, span.small, ul.small, ol.small, blockquote.small {
 }
 
 .date {
-	font-family: 'CalvertMTStdLight';
+	font-family: 'Bitter', serif;
+	font-weight: 400;
 	font-size: 14px;
 }
 

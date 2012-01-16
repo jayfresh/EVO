@@ -344,5 +344,11 @@ function end_info_shortcode($attr) {
 	return $html;
 }
 
+add_action('wp_head', 'font_embed');
+
+function font_embed () {
+	echo "<link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>";
+}
+
 
 ?>
