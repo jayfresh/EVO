@@ -108,7 +108,7 @@ function moveStrip(direction) {
 function setCarouselTimeout() {
 	arguments.callee.timeout = window.setInterval(function() {
 		moveStrip(1);
-	}, 4000);
+	}, 5000);
 }
 
 // for the Highlight Search Terms plugin
