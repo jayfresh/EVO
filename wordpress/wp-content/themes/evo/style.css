@@ -476,18 +476,18 @@ li#menu-count-0:hover {
 #searchButton {
 	background-color: transparent;
 	border: none;
-	background-image: url(images/mag.png);
+	background-image: url('images/mag.png');
 	background-repeat: no-repeat;
 	background-position: right center;
 	height: 24px;
 	width: 25px;
-	float: right;
-	margin-top: -55px;
 	text-indent: -9999px;
 	overflow: hidden;
 	display: block;
-	position: relative;
+	position: absolute;
 	z-index: 1;
+	top: 0;
+	right: 0;
 }
 #searchButton:hover {
 	opacity: 0.6;
@@ -504,6 +504,10 @@ li#menu-count-0:hover {
 }
 :-moz-placeholder {
     color: #EEEEE7;
+}
+
+#search form {
+	position: relative;
 }
 
 #search ul {
